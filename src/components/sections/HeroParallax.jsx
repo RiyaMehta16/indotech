@@ -5,9 +5,9 @@ import React from "react";
 import { FloatingNav } from "../ui/FloatingNavbar";
 
 export const HeroParallax = ({ products }) => {
-  const firstRow = products.slice(0, 5);
-  const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+  const firstRow = products.slice(0, 8);
+  const secondRow = products.slice(8, 16);
+  const thirdRow = products.slice(16, 24);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -60,8 +60,15 @@ export const HeroParallax = ({ products }) => {
       <Header />
       <motion.div
         style={{ rotateX, rotateY, rotateZ, translateY, opacity }}
-        className=""
+        className="flex flex-col items-center space-y-12"
       >
+        <motion.h2
+          className="text-4xl font-bold text-center text-gray-800 dark:text-white"
+          style={{ opacity }}
+        >
+          Checkout Our Products
+        </motion.h2>
+
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
             <ProductCard
