@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { ProductCard } from "../ui/ProductCard";
 import { Header } from "../ui/Header";
 import React from "react";
+import { FloatingNav } from "../ui/FloatingNavbar";
 
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
@@ -45,11 +46,17 @@ export const HeroParallax = ({ products }) => {
     springConfig
   );
 
+  const navItems = [
+    { name: "Home", link: "/", icon: "🏠" },
+    { name: "About", link: "/about", icon: "ℹ️" },
+    { name: "Contact", link: "/contact", icon: "📞" },
+  ];
   return (
     <div
       ref={ref}
       className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
+      <FloatingNav navItems={navItems} />
       <Header />
       <motion.div
         style={{ rotateX, rotateY, rotateZ, translateY, opacity }}

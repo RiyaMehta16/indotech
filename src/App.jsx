@@ -1,13 +1,13 @@
 // src/App.js
 import React from "react";
 import { HeroParallax } from "./components/sections/HeroParallax";
+import { cover1 } from "./assets";
 
 export const products = [
   {
-    title: "Moonbeam",
+    title: "Cover1",
     link: "https://indotechengineering.in/",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    thumbnail: cover1,
   },
   {
     title: "Cursor",
@@ -15,18 +15,7 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cursor.png",
   },
-  {
-    title: "Moonbeam",
-    link: "https://indotechengineering.in/",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
-  },
-  {
-    title: "Cursor",
-    link: "https://indotechengineering.in/",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
-  },
+
   {
     title: "Rogue",
     link: "https://indotechengineering.in/",
