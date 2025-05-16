@@ -4,6 +4,8 @@ import { Header } from "../ui/Header";
 import React from "react";
 import { FloatingNav } from "../ui/FloatingNavbar";
 
+import { House, Info, Phone } from "lucide-react";
+
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 8);
   const secondRow = products.slice(8, 16);
@@ -45,12 +47,12 @@ export const HeroParallax = ({ products }) => {
     useTransform(scrollYProgress, [0, 0.2], [-700, 100]),
     springConfig
   );
-
   const navItems = [
-    { name: "Home", link: "/", icon: "🏠" },
-    { name: "About", link: "/about", icon: "ℹ️" },
-    { name: "Contact", link: "/contact", icon: "📞" },
+    { name: "Home", link: "/", icon: <House /> },
+    { name: "About", link: "/about", icon: <Info /> },
+    { name: "Contact", link: "/contact", icon: <Phone /> },
   ];
+
   return (
     <div
       ref={ref}

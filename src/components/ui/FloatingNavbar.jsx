@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import { cn } from "../../utils/cn";
 import logo from "../../assets/logos/logo.png";
+
 export const FloatingNav = ({ navItems = [], className }) => {
   const { scrollY } = useScroll();
   const [visible, setVisible] = useState(true);

@@ -28,6 +28,7 @@ import {
   motorComponent5,
   motorComponent6,
 } from "../assets";
+
 export const products = [
   {
     title: "Cover1",
