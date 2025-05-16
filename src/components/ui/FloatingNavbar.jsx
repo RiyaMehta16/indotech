@@ -9,6 +9,8 @@ import {
 } from "framer-motion";
 import { cn } from "../../utils/cn";
 import logo from "../../assets/logos/logo.png";
+import favicon from "../../assets/logos/favicon2.png";
+import { Button } from "./Button";
 
 export const FloatingNav = ({ navItems = [], className }) => {
   const { scrollY } = useScroll();
@@ -42,7 +44,8 @@ export const FloatingNav = ({ navItems = [], className }) => {
       >
         {/* Logo section */}
         <div className="flex items-center space-x-2">
-          <img className="h-10" src={logo} />
+          <img className="h-10 hidden sm:block" src={logo} />
+          <img className="h-10 block sm:hidden" src={favicon} />
         </div>
 
         {/* Nav links */}
@@ -59,14 +62,12 @@ export const FloatingNav = ({ navItems = [], className }) => {
               <span className="block sm:hidden">{navItem.icon}</span>
             </a>
           ))}
-          <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+          <Button>
             <span className="hidden sm:block text-sm">Contact Us</span>
             <span className="block sm:hidden">
               <Phone />
             </span>
-
-            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
-          </button>
+          </Button>
         </div>
       </motion.div>
     </AnimatePresence>
