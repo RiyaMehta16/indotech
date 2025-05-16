@@ -6,6 +6,7 @@ import AboutSection from "./components/sections/AboutSection";
 import ManufacturingSection from "./components/sections/ManufacturingSection";
 import ProductRangeSection from "./components/sections/ProductRangeSection";
 import GetInTouchSection from "./components/sections/GetInTouchSection";
+import Footer from "./components/sections/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ProductRangeSection />
       <AboutSection />
       <GetInTouchSection />
+      <Footer />
     </div>
   );
 }
