@@ -7,7 +7,7 @@ import whatsapp from "../../assets/whatsapp.png";
 export function Header() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center px-4 py-10 md:py-20">
-      <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
+      <h1 className="relative z-10 mx-auto max-w-4xl font-bold text-center text-2xl max-lg:font-extrabold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
         {"Better Products, Fine Manufacturing".split(" ").map((word, index) => (
           <motion.span
             key={index}
@@ -35,7 +35,7 @@ export function Header() {
           duration: 0.3,
           delay: 0.8,
         }}
-        className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+        className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 max-lg:font-semibold dark:text-neutral-400"
       >
         Talented engineers at work for your precision manufacturing needs
       </motion.p>

@@ -7,9 +7,9 @@ import { FloatingNav } from "../ui/FloatingNavbar";
 import { House, Info, Factory } from "lucide-react";
 
 export const ProductsParallax = ({ products }) => {
-  const firstRow = products.slice(0, 8);
-  const secondRow = products.slice(8, 16);
-  const thirdRow = products.slice(16, 24);
+  const firstRow = products.slice(0, 14);
+  const secondRow = products.slice(4, 19);
+  const thirdRow = products.slice(0, 24);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -47,31 +47,25 @@ export const ProductsParallax = ({ products }) => {
     useTransform(scrollYProgress, [0, 0.2], [-700, 100]),
     springConfig
   );
-  const navItems = [
-    { name: "Home", link: "", icon: <House /> },
-    { name: "About", link: "#about", icon: <Info /> },
-    { name: "Our Products", link: "#products", icon: <Factory /> },
-  ];
 
   return (
     <div
       ref={ref}
-      className="h-[260vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[260vh] -z-10 max-lg:h-[220vh] max-lg:py-20 max-md:h-[170vh] max-md:py-5 max-md:translate-y-28 py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
-      <FloatingNav navItems={navItems} />
-      <Header />
+      <Header className="mt-32" />
       <motion.div
         style={{ rotateX, rotateY, rotateZ, translateY, opacity }}
-        className="flex flex-col items-center space-y-12  bg-blue-900 py-20 px-96"
+        className="flex flex-col items-center space-y-5  bg-blue-900 py-20 px-96 max-sm:px-4 max-sm:py-4 max-sm:-translate-y-20"
       >
         <motion.h2
-          className="text-4xl font-bold text-center text-white"
+          className="text-4xl font-bold text-center text-nowrap text-white max-xl:text-4xl max-xl:mb-16 max-lg:text-xl max-sm:text-md max-sm:text-wrap  max-sm:whitespace-normal max-sm:mb-4"
           style={{ opacity }}
         >
           A Diverse Collection to Choose From
         </motion.h2>
 
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 mb-5 max-sm:space-x-2 max-sm:mb-2">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -80,7 +74,7 @@ export const ProductsParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row mb-20 space-x-20 ">
+        <motion.div className="flex flex-row mb-5 space-x-5 max-sm:space-x-2 max-sm:mb-2">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -89,7 +83,7 @@ export const ProductsParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 max-sm:space-x-2 max-sm:mb-2">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}

@@ -8,10 +8,19 @@ import ProductRangeSection from "./components/sections/ProductRangeSection";
 import GetInTouchSection from "./components/sections/GetInTouchSection";
 import Footer from "./components/sections/Footer";
 import ScrollReveal from "./components/ui/ScrollReveal";
+import { FloatingNav } from "./components/ui/FloatingNavbar";
 
+import { House, Info, Factory } from "lucide-react";
 function App() {
+  const navItems = [
+    { name: "Home", link: "", icon: <House /> },
+    { name: "About", link: "#about", icon: <Info /> },
+    { name: "Our Products", link: "#products", icon: <Factory /> },
+  ];
   return (
     <div id="">
+      <FloatingNav navItems={navItems} />
+
       <ProductsParallax products={products} />
       <ScrollReveal>
         <ManufacturingSection />

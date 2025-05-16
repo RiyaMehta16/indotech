@@ -5,12 +5,20 @@ export const ProductCard = ({ product, translate }) => {
     <motion.div
       style={{
         x: translate,
+        borderRadius: "0.5rem", // 8px base
+        overflow: "hidden", // ensure children respect rounded corners
       }}
       whileHover={{
-        y: -20,
+        y: -5,
+        borderRadius: "1rem", // 16px on hover
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
       }}
       key={product.title}
-      className="group/product h-72 w-72  relative shrink-0"
+      className="group/product h-72 w-72 relative shrink-0 max-md:max-h-40 max-md:max-w-40 max-sm:max-h-36 max-sm:max-w-36"
     >
       <a href={product.link} className="block group-hover/product:shadow-2xl  ">
         <img
