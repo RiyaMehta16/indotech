@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import TransparentButton from "./TransparentButton";
+import whatsapp from "../../assets/whatsapp.png";
 
 export function Header() {
   return (
@@ -37,6 +39,20 @@ export function Header() {
       >
         Talented engineers at work for your precision manufacturing needs
       </motion.p>
+      <a
+        className="flex justify-center mt-5"
+        href="https://api.whatsapp.com/send/?phone=%2B918196800108&text&type=phone_number&app_absent=0"
+        target="_blank"
+      >
+        <TransparentButton
+          bgColor="bg-green-600"
+          hoverClass="hover:bg-green-700"
+          className="flex  items-center"
+        >
+          <img src={whatsapp} alt="whatsapp" className="h-7 mr-3" />
+          Contact on Whatsapp
+        </TransparentButton>
+      </a>
     </div>
   );
 }

@@ -56,19 +56,19 @@ export const ProductsParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[240vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[260vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <FloatingNav navItems={navItems} />
       <Header />
       <motion.div
         style={{ rotateX, rotateY, rotateZ, translateY, opacity }}
-        className="flex flex-col items-center space-y-12 bg-[#2657ba] py-20 px-96"
+        className="flex flex-col items-center space-y-12  bg-blue-900 py-20 px-96"
       >
         <motion.h2
           className="text-4xl font-bold text-center text-white"
           style={{ opacity }}
         >
-          Checkout Our Products
+          A Diverse Collection to Choose From
         </motion.h2>
 
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
