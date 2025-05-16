@@ -2,9 +2,8 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { ProductCard } from "../ui/ProductCard";
 import { Header } from "../ui/Header";
 import React from "react";
-import { FloatingNav } from "../ui/FloatingNavbar";
 
-import { House, Info, Factory } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export const ProductsParallax = ({ products }) => {
   const firstRow = products.slice(0, 14);
@@ -51,15 +50,31 @@ export const ProductsParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[260vh] -z-10 max-lg:h-[220vh] max-lg:py-20 max-md:h-[170vh] max-md:py-5 max-md:translate-y-28 py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[280vh] -z-10 max-lg:h-[250vh] max-lg:py-20 max-md:h-[180vh] max-sm:h-[130vh] max-md:py-5 max-md:translate-y-20 py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header className="mt-32" />
       <motion.div
+        className="max-sm:flex hidden flex-col items-center justify-center"
+        initial={{ opacity: 1 }}
+        animate={{ y: [0, 10, 0] }}
+        transition={{
+          repeat: Infinity,
+          duration: 1.5,
+          ease: "easeInOut",
+        }}
+        style={{
+          opacity: useTransform(scrollYProgress, [0, 0.05], [1, 0]),
+        }}
+      >
+        <ChevronDown className="text-blue-900 w-6 h-6 mb-2 animate-pulse" />
+        <span className="text-white text-sm">Scroll</span>
+      </motion.div>
+      <motion.div
         style={{ rotateX, rotateY, rotateZ, translateY, opacity }}
-        className="flex flex-col items-center space-y-5  bg-blue-900 py-20 px-96 max-sm:px-4 max-sm:py-4 max-sm:-translate-y-20"
+        className="flex flex-col items-center space-y-5  bg-blue-900 py-20 px-96 max-sm:px-4 max-sm:py-4 max-sm:-translate-y-28"
       >
         <motion.h2
-          className="text-4xl font-bold text-center text-nowrap text-white max-xl:text-4xl max-xl:mb-16 max-lg:text-xl max-sm:text-md max-sm:text-wrap  max-sm:whitespace-normal max-sm:mb-4"
+          className="text-4xl font-bold text-center text-nowrap text-white max-xl:text-4xl max-xl:mb-16 max-lg:text-2xl max-sm:text-md max-sm:text-wrap  max-sm:whitespace-normal max-sm:mb-4"
           style={{ opacity }}
         >
           A Diverse Collection to Choose From
