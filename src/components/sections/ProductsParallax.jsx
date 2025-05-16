@@ -4,9 +4,9 @@ import { Header } from "../ui/Header";
 import React from "react";
 import { FloatingNav } from "../ui/FloatingNavbar";
 
-import { House, Info, Phone } from "lucide-react";
+import { House, Info, Factory } from "lucide-react";
 
-export const HeroParallax = ({ products }) => {
+export const ProductsParallax = ({ products }) => {
   const firstRow = products.slice(0, 8);
   const secondRow = products.slice(8, 16);
   const thirdRow = products.slice(16, 24);
@@ -50,7 +50,7 @@ export const HeroParallax = ({ products }) => {
   const navItems = [
     { name: "Home", link: "/", icon: <House /> },
     { name: "About", link: "/about", icon: <Info /> },
-    { name: "Contact", link: "/contact", icon: <Phone /> },
+    { name: "We Manufacture", link: "/products", icon: <Factory /> },
   ];
 
   return (
@@ -62,10 +62,10 @@ export const HeroParallax = ({ products }) => {
       <Header />
       <motion.div
         style={{ rotateX, rotateY, rotateZ, translateY, opacity }}
-        className="flex flex-col items-center space-y-12"
+        className="flex flex-col items-center space-y-12 bg-[#2657ba] py-20 px-96"
       >
         <motion.h2
-          className="text-4xl font-bold text-center text-gray-800 dark:text-white"
+          className="text-4xl font-bold text-center text-white"
           style={{ opacity }}
         >
           Checkout Our Products
