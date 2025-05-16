@@ -14,7 +14,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <div className="my-20 px-4 md:px-12 lg:px-32">
+    <div className="my-20 px-4 md:px-12 lg:px-32" id="about">
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <img
           src={aboutus}

@@ -5,7 +5,7 @@ import ContactUsForm from "../ContactUsForm";
 
 const GetInTouchSection = () => {
   return (
-    <div className="mx-0">
+    <div className="mx-0" id="contact">
       <Banner />
       <div className="flex mx-20  justify-between items-start">
         <div className="flex-1 m-5  max-w-md">

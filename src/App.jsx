@@ -7,16 +7,27 @@ import ManufacturingSection from "./components/sections/ManufacturingSection";
 import ProductRangeSection from "./components/sections/ProductRangeSection";
 import GetInTouchSection from "./components/sections/GetInTouchSection";
 import Footer from "./components/sections/Footer";
+import ScrollReveal from "./components/ui/ScrollReveal";
 
 function App() {
   return (
-    <div>
+    <div id="">
       <ProductsParallax products={products} />
-      <ManufacturingSection />
-      <ProductRangeSection />
-      <AboutSection />
-      <GetInTouchSection />
-      <Footer />
+      <ScrollReveal>
+        <ManufacturingSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ProductRangeSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <AboutSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <GetInTouchSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Footer />
+      </ScrollReveal>
     </div>
   );
 }

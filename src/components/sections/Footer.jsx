@@ -1,5 +1,7 @@
 import React from "react";
-
+import facebook from "../../assets/facebook.png";
+import linkedin from "../../assets/linkedin.png";
+import instagram from "../../assets/instagram.png";
 const footerData = {
   Links: ["About", "Products", "Features"],
   //   About: ["Company", "Team", "Legacy"],
@@ -7,10 +9,19 @@ const footerData = {
 };
 
 const socialLinks = [
-  { icon: "ion-social-facebook", url: "#" },
-  { icon: "ion-social-twitter", url: "#" },
-  { icon: "ion-social-snapchat", url: "#" },
-  { icon: "ion-social-instagram", url: "#" },
+  {
+    icon: facebook,
+    url: "#https://www.facebook.com/people/Indotech-Engineering-Products/100083873817754/#",
+  },
+  {
+    icon: linkedin,
+    url: "#https://www.facebook.com/people/Indotech-Engineering-Products/100083873817754/#",
+  },
+
+  {
+    icon: instagram,
+    url: "#https://www.facebook.com/people/Indotech-Engineering-Products/100083873817754/#",
+  },
 ];
 
 const Footer = () => {
@@ -37,14 +48,24 @@ const Footer = () => {
           ))}
 
           <div className="w-40 text-center md:text-right">
-            <div className="flex justify-center md:justify-end space-x-4 mt-6 md:mt-0">
+            <div className="">
+              <h3 className="mb-3 font-bold text-lg">Our Socials</h3>
+              <p className="text-gray-600 hover:text-gray-900 transition-opacity duration-200 opacity-80 hover:opacity-100">
+                We ensure we are available everywhere for your support
+              </p>
+            </div>
+            <div className="flex justify-center md:justify-end space-x-4 mt-6 md:mt-10">
               {socialLinks.map((social, i) => (
                 <a
                   key={i}
                   href={social.url}
                   className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 opacity-75 hover:opacity-100 transition-opacity duration-200"
                 >
-                  <i className={`icon ${social.icon} text-xl`}></i>
+                  <img
+                    src={social.icon}
+                    alt="icon"
+                    className="size-5 opacity-50"
+                  />
                 </a>
               ))}
             </div>

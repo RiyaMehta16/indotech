@@ -48,9 +48,9 @@ export const ProductsParallax = ({ products }) => {
     springConfig
   );
   const navItems = [
-    { name: "Home", link: "/", icon: <House /> },
-    { name: "About", link: "/about", icon: <Info /> },
-    { name: "We Manufacture", link: "/products", icon: <Factory /> },
+    { name: "Home", link: "", icon: <House /> },
+    { name: "About", link: "#about", icon: <Info /> },
+    { name: "Our Products", link: "#products", icon: <Factory /> },
   ];
 
   return (

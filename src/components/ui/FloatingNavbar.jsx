@@ -16,6 +16,12 @@ export const FloatingNav = ({ navItems = [], className }) => {
   const { scrollY } = useScroll();
   const [visible, setVisible] = useState(true);
   const [lastY, setLastY] = useState(0);
+  const handleScroll = () => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (typeof latest === "number") {
@@ -62,12 +68,17 @@ export const FloatingNav = ({ navItems = [], className }) => {
               <span className="block sm:hidden">{navItem.icon}</span>
             </a>
           ))}
-          <Button>
-            <span className="hidden sm:block text-sm">Contact Us</span>
-            <span className="block sm:hidden">
-              <Phone />
-            </span>
-          </Button>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B918196800108&text&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <Button>
+              <span className="hidden sm:block text-sm">Contact Us</span>
+              <span className="block sm:hidden">
+                <Phone />
+              </span>
+            </Button>
+          </a>
         </div>
       </motion.div>
     </AnimatePresence>

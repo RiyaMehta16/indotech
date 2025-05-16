@@ -27,7 +27,7 @@ const ProductRangeSection = () => {
     },
   ];
   return (
-    <div className="bg-blue-50 py-20">
+    <div className="bg-blue-50 py-20 " id="products">
       <HeadingForSections title="Our Product Range" />
       <div className="flex space-x-10 justify-center">
         {products.map((product) => (
