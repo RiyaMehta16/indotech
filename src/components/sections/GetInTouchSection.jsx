@@ -5,13 +5,13 @@ import ContactUsForm from "../ContactUsForm";
 
 const GetInTouchSection = () => {
   return (
-    <div className="mx-0" id="contact">
+    <div id="contact">
       <Banner />
-      <div className="flex mx-20  justify-between items-start">
-        <div className="flex-1 m-5  max-w-md">
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-10 px-4 sm:px-6 lg:px-20 py-10">
+        <div className="w-full lg:w-1/2">
           <InformationAboutCompany />
         </div>
-        <div className="flex-1 ml-40 m-5">
+        <div className="w-full lg:w-1/2">
           <ContactUsForm />
         </div>
       </div>

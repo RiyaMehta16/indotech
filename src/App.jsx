@@ -13,7 +13,7 @@ import { FloatingNav } from "./components/ui/FloatingNavbar";
 import { House, Info, Factory } from "lucide-react";
 function App() {
   const navItems = [
-    { name: "Home", link: "", icon: <House className="max-sm:w-4" /> },
+    { name: "Home", link: "#", icon: <House className="max-sm:w-4" /> },
     { name: "About", link: "#about", icon: <Info className="max-sm:w-4" /> },
     {
       name: "Our Products",

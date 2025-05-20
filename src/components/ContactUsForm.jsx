@@ -25,7 +25,7 @@ const ContactUsForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-3xl  p-6 bg-white dark:bg-zinc-900 rounded-2xl shadow-lg space-y-6"
+      className="w-full p-6 bg-white dark:bg-zinc-900 rounded-2xl shadow-lg space-y-6"
     >
       <h2 className="text-2xl font-bold text-slate-700 dark:text-white">
         Contact Us

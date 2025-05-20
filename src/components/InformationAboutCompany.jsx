@@ -26,14 +26,14 @@ const InformationAboutCompany = () => {
   ];
 
   return (
-    <div className="max-w-4xl  p-6 bg-white rounded-2xl  dark:bg-zinc-900">
+    <div className="w-full p-6 bg-white rounded-2xl shadow-md dark:bg-zinc-900">
       <h2 className="text-2xl font-bold text-slate-700 mb-4 dark:text-white">
         Get in Touch
       </h2>
       <p className="text-neutral-600 dark:text-neutral-400 mb-6">
         We're here to help and answer any questions you might have.
       </p>
-      <div className="grid gap-6 sm:grid-cols-1 w-1/2">
+      <div className="grid gap-6 sm:grid-cols-1">
         {infoItems.map((item, index) => (
           <div key={index} className="flex items-start gap-4">
             <div className="p-2 bg-blue-100 rounded-full">{item.icon}</div>
