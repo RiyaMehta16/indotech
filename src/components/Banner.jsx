@@ -1,6 +1,7 @@
 import React from "react";
 import whatsapp from "../assets/whatsapp.png";
 import TransparentButton from "./ui/TransparentButton";
+import { Button } from "./ui/Button";
 
 const Banner = () => {
   return (

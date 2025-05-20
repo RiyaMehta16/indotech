@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import TransparentButton from "./TransparentButton";
 import whatsapp from "../../assets/whatsapp.png";
+import { Button } from "./Button";
 
 export function Header() {
   return (
@@ -39,20 +40,31 @@ export function Header() {
       >
         Talented engineers at work for your precision manufacturing needs
       </motion.p>
-      <a
-        className="flex justify-center mt-5"
-        href="https://api.whatsapp.com/send/?phone=%2B918196800108&text&type=phone_number&app_absent=0"
-        target="_blank"
-      >
-        <TransparentButton
-          bgColor="bg-green-600"
-          hoverClass="hover:bg-green-700"
-          className="flex  items-center"
+      <div className="flex ">
+        <a className="flex justify-center " href="contact">
+          <TransparentButton
+            bgColor="bg-blue-600"
+            hoverClass="hover:bg-blue-700"
+            className="flex  items-center mr-5"
+          >
+            Get Started &rarr;
+          </TransparentButton>
+        </a>
+        <a
+          className="flex justify-center "
+          href="https://api.whatsapp.com/send/?phone=%2B918196800108&text&type=phone_number&app_absent=0"
+          target="_blank"
         >
-          <img src={whatsapp} alt="whatsapp" className="h-7 mr-3" />
-          Contact on Whatsapp
-        </TransparentButton>
-      </a>
+          <TransparentButton
+            bgColor="bg-green-600"
+            hoverClass="hover:bg-green-700"
+            className="flex  items-center"
+          >
+            <img src={whatsapp} alt="whatsapp" className="h-7 mr-3" />
+            Contact on Whatsapp
+          </TransparentButton>
+        </a>
+      </div>
     </div>
   );
 }
