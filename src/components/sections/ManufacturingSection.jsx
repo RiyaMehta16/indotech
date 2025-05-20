@@ -1,6 +1,6 @@
 import React from "react";
 import HeadingForSections from "../ui/HeadingForSections";
-import { Bolt } from "lucide-react";
+import { Bolt, ShieldCheck, Globe } from "lucide-react";
 import ManufacturingFeaturesCard from "../ManufacturingFeaturesCard";
 
 const ManufacturingSection = () => {
@@ -15,18 +15,18 @@ const ManufacturingSection = () => {
       id: 1,
       title: "Quality Assurance",
       text: "Rigorous quality control processes meeting international standards.",
-      icon: <Bolt color="#1c3c84" strokeWidth={2} />,
+      icon: <ShieldCheck color="#1c3c84" strokeWidth={2} />,
     },
     {
       id: 2,
       title: "Global Delivery",
       text: "Timely delivery of products to clients worldwide with tracking systems.",
-      icon: <Bolt color="#1c3c84" strokeWidth={2} />,
+      icon: <Globe color="#1c3c84" strokeWidth={2} />,
     },
   ];
 
   return (
-    <div className=" mb-32 max-sm:-translate-y-20 max-sm:mb-16">
+    <div id="features" className=" mb-32 max-sm:-translate-y-20 max-sm:mb-16">
       <HeadingForSections
         title="Our Manufacturing Excellence"
         text="We are committed to providing the best manufacturing experience to our vendors and partners across the globe with complete quality standards."

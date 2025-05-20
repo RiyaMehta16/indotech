@@ -3,7 +3,11 @@ import facebook from "../../assets/facebook.png";
 import linkedin from "../../assets/linkedin.png";
 import instagram from "../../assets/instagram.png";
 const footerData = {
-  Links: ["About", "Products", "Features"],
+  Links: [
+    { title: "About", url: "#about" },
+    { title: "Products", url: "#products" },
+    { title: "Features", url: "#features" },
+  ],
   //   About: ["Company", "Team", "Legacy"],
   //   Careers: ["Job openings", "Employee success", "Benefits"],
 };
@@ -36,10 +40,10 @@ const Footer = () => {
                 {links.map((link, i) => (
                   <li key={i}>
                     <a
-                      href="#"
+                      href={link.url}
                       className="text-gray-600 hover:text-gray-900 transition-opacity duration-200 opacity-80 hover:opacity-100"
                     >
-                      {link}
+                      {link.title}
                     </a>
                   </li>
                 ))}

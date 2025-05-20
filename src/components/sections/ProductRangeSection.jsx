@@ -29,7 +29,7 @@ const ProductRangeSection = () => {
   ];
 
   return (
-    <section className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12" id="products">
+    <section id="products" className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12">
       <ScrollReveal>
         <HeadingForSections title="Our Product Range" />
 
