@@ -9,7 +9,7 @@ import { Button } from "./Button";
 
 export const FloatingNav = ({ navItems = [], className }) => {
   return (
-    <div className="sticky top-0 z-[5000]">
+    <div className="sticky top-0 z-[5000] min-w-80">
       <AnimatePresence mode="wait">
         <motion.div
           initial={{ opacity: 1, y: 0 }}
@@ -22,8 +22,8 @@ export const FloatingNav = ({ navItems = [], className }) => {
         >
           {/* Logo section */}
           <div className="flex items-center space-x-2">
-            <img className="h-10 hidden sm:block" src={logo} />
-            <img className="h-10 block sm:hidden" src={favicon} />
+            <img className="h-10 hidden sm:block " src={logo} />
+            <img className="h-10 block sm:hidden max-sm:h-7" src={favicon} />
           </div>
 
           {/* Nav links */}
@@ -37,7 +37,7 @@ export const FloatingNav = ({ navItems = [], className }) => {
                 )}
               >
                 <span className="hidden sm:block text-sm">{navItem.name}</span>
-                <span className="block sm:hidden">{navItem.icon}</span>
+                <span className="block sm:hidden ">{navItem.icon}</span>
               </a>
             ))}
             <a
@@ -47,8 +47,8 @@ export const FloatingNav = ({ navItems = [], className }) => {
             >
               <Button>
                 <span className="hidden sm:block text-sm">Contact Us</span>
-                <span className="block sm:hidden">
-                  <Phone />
+                <span className="block sm:hidden max-sm:-m-2">
+                  <Phone className="max-sm:w-4" />
                 </span>
               </Button>
             </a>

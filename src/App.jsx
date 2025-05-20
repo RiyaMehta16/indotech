@@ -13,12 +13,16 @@ import { FloatingNav } from "./components/ui/FloatingNavbar";
 import { House, Info, Factory } from "lucide-react";
 function App() {
   const navItems = [
-    { name: "Home", link: "", icon: <House /> },
-    { name: "About", link: "#about", icon: <Info /> },
-    { name: "Our Products", link: "#products", icon: <Factory /> },
+    { name: "Home", link: "", icon: <House className="max-sm:w-4" /> },
+    { name: "About", link: "#about", icon: <Info className="max-sm:w-4" /> },
+    {
+      name: "Our Products",
+      link: "#products",
+      icon: <Factory className="max-sm:w-4" />,
+    },
   ];
   return (
-    <div id="">
+    <div id="" className="min-w-80">
       <FloatingNav navItems={navItems} />
 
       <ProductsParallax products={products} />
