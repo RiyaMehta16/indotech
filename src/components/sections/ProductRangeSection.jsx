@@ -36,7 +36,10 @@ const ProductRangeSection = () => {
         <div className="w-full max-w-screen-xl mx-auto mt-10">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 max-sm:grid-cols-1 place-items-center">
             {products.map((product) => (
-              <div key={product.id} className={`flex justify-center w-full `}>
+              <div
+                key={product.id}
+                className={`flex justify-center w-full max-w-80 `}
+              >
                 <ProductCard product={product} />
               </div>
             ))}

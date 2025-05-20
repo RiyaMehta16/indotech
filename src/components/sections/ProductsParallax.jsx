@@ -50,7 +50,7 @@ export const ProductsParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[280vh] -z-10 max-lg:h-[250vh] max-lg:py-20 max-md:h-[180vh] max-sm:h-[130vh] max-md:py-5 max-md:translate-y-20 py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[245vh]  max-lg:h-[250vh] max-lg:py-20 max-md:h-[180vh] max-sm:h-[130vh] max-md:py-5 max-md:translate-y-20 py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header className="mt-32" />
       <motion.div

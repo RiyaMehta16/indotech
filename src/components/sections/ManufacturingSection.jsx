@@ -26,7 +26,7 @@ const ManufacturingSection = () => {
   ];
 
   return (
-    <div className="mt-20 mb-32 max-sm:-translate-y-20 max-sm:mb-16">
+    <div className=" mb-32 max-sm:-translate-y-20 max-sm:mb-16">
       <HeadingForSections
         title="Our Manufacturing Excellence"
         text="We are committed to providing the best manufacturing experience to our vendors and partners across the globe with complete quality standards."
