@@ -47,12 +47,24 @@ import pedestralFan1 from "./pedestralFans/pedestralFan1.jpg";
 import pedestralFan2 from "./pedestralFans/pedestralFan2.jpg";
 import pedestralFan3 from "./pedestralFans/pedestralFan3.jpg";
 import pedestralFan4 from "./pedestralFans/pedestralFan4.jpg";
+import cooler1 from "./coolerFans/cooler1.jpeg";
+import cooler2 from "./coolerFans/cooler2.jpeg";
+import cooler3 from "./coolerFans/cooler3.jpeg";
 // Import your assets
 import metalSheetRings from "../assets/metalSheetRings.png";
 import acMotorCovers from "../assets/acMotorCovers.png";
 import fanBlades from "../assets/fanBlades.png";
+import coolerMotor1 from "../assets/coolerMotors/coolerMotor1.jpeg";
+import coolerMotor2 from "../assets/coolerMotors/coolerMotor2.jpeg";
+import coolerStand1 from "../assets/coolerStand/coolerStand1.jpg";
 
 export {
+  cooler1,
+  cooler2,
+  cooler3,
+  coolerMotor1,
+  coolerMotor2,
+  coolerStand1,
   cover1,
   cover2,
   cover3,

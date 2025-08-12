@@ -27,9 +27,6 @@ import {
   motorComponent4,
   motorComponent5,
   motorComponent6,
-  metalSheetRings,
-  acMotorCovers,
-  fanBlades,
   cover7,
   cover8,
   cover9,
@@ -51,6 +48,12 @@ import {
   ring8,
   ring9,
   ring10,
+  cooler3,
+  cooler2,
+  cooler1,
+  coolerStand1,
+  coolerMotor2,
+  coolerMotor1,
 } from "../assets";
 
 export const products = [
@@ -199,50 +202,51 @@ export const products = [
     thumbnail: ring6,
   },
 ];
-export const allProductsItems = [
+export const coolers = [
   {
-    id: 1,
-    image: metalSheetRings,
-    title: "Metal Sheet Ring",
-    description:
-      "Precision-engineered rings for industrial applications with unmatched durability and quality assurance.",
+    image: cooler1,
+    title: "cooler1",
+    description: "Short description",
+    price: "$450",
+    sizes: ['15"', '16"', '17"', '18"'],
   },
   {
-    id: 2,
-    image: acMotorCovers,
-    title: "AC Motor Cover",
-    description:
-      "Durable motor covers with perfect finishing for maximum protection and performance.",
+    image: cooler2,
+    title: "cooler2",
+    description: "Short description",
+    price: "$450",
+    sizes: ['15"', '16"', '17"', '18"'],
   },
   {
-    id: 3,
-    image: fanBlades,
-    title: "Fan Blades",
-    description:
-      "High-performance blades designed for optimal airflow, efficiency, and long-lasting use.",
+    image: cooler3,
+    title: "cooler3",
+    description: "Short description",
+    price: "$450",
+    sizes: ['15"', '16"', '17"', '18"'],
+  },
+];
+export const coolersAccessories = [
+  {
+    image: coolerStand1,
+    title: "coolerStand1",
+    description: "Short description",
+    price: "$450",
+    sizes: ['15"', '16"', '17"', '18"'],
   },
   {
-    id: 4,
-    image: fanBlades,
-    title: "Fan Blades",
-    description:
-      "High-performance blades designed for optimal airflow, efficiency, and long-lasting use.",
+    image: coolerMotor1,
+    title: "coolerMotor1",
+    description: "Short description",
+    price: "$450",
+    sizes: ['15"', '16"', '17"', '18"'],
   },
   {
-    id: 5,
-    image: metalSheetRings,
-    title: "Metal Sheet Ring",
-    description:
-      "Precision-engineered rings for industrial applications with unmatched durability and quality assurance.",
+    image: coolerMotor2,
+    title: "coolerMotor2",
+    description: "Short description",
+    price: "$450",
+    sizes: ['15"', '16"', '17"', '18"'],
   },
-  {
-    id: 6,
-    image: acMotorCovers,
-    title: "AC Motor Cover",
-    description:
-      "Durable motor covers with perfect finishing for maximum protection and performance.",
-  },
-  // You can list more categories or detailed single items with unique images from your /assets folders
 ];
 
 export const covers = [

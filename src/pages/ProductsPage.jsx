@@ -6,6 +6,8 @@ import CatalogueItem from "../components/ui/CatalogueItem";
 // Example: You could import ALL individual product images from /assets/* folders
 // later if you want a more detailed listing.
 import {
+  coolers,
+  coolersAccessories,
   covers,
   fanblades,
   motorComponents,
@@ -25,7 +27,31 @@ const ProductsPage = () => {
       <ScrollReveal immediate>
         <div className="min-w-80 py-10 px-4 sm:px-6 lg:px-12">
           <h1 className="text-4xl text-center text-blue-950 font-bold my-5">
-            Covers
+            Coolers
+          </h1>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {coolers.map((p, index) => (
+              <CatalogueItem key={index} product={p} />
+            ))}
+          </div>
+        </div>
+      </ScrollReveal>
+      <ScrollReveal threshold={0.05}>
+        <div className="min-w-80 py-10 px-4 sm:px-6 lg:px-12">
+          <h1 className="text-4xl text-center text-blue-950 font-bold my-5">
+            Cooler Stands & Motors
+          </h1>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {coolersAccessories.map((p, index) => (
+              <CatalogueItem key={index} product={p} />
+            ))}
+          </div>
+        </div>
+      </ScrollReveal>
+      <ScrollReveal threshold={0.05}>
+        <div className="min-w-80 py-10 px-4 sm:px-6 lg:px-12">
+          <h1 className="text-4xl text-center text-blue-950 font-bold my-5">
+            Cooler Motor Covers
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {covers.map((p, index) => (
@@ -37,7 +63,7 @@ const ProductsPage = () => {
       <ScrollReveal threshold={0.05}>
         <div className="min-w-80 py-10 px-4 sm:px-6 lg:px-12">
           <h1 className="text-4xl text-center text-blue-950 font-bold my-5">
-            Fanblades
+            Cooler Fan Blades
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {fanblades.map((p, index) => (
@@ -49,7 +75,7 @@ const ProductsPage = () => {
       <ScrollReveal threshold={0.05}>
         <div className="min-w-80 py-10 px-4 sm:px-6 lg:px-12">
           <h1 className="text-4xl text-center text-blue-950 font-bold my-5">
-            Motor Components
+            Cooler Motor Components/Parts
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {motorComponents.map((p, index) => (
@@ -61,7 +87,7 @@ const ProductsPage = () => {
       <ScrollReveal threshold={0.05}>
         <div className="min-w-80 py-10 px-4 sm:px-6 lg:px-12">
           <h1 className="text-4xl text-center text-blue-950 font-bold my-5">
-            Motor Rings
+            Cooler Metal Sheet Rings
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {motorRings.map((p, index) => (

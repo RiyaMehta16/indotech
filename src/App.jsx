@@ -15,9 +15,11 @@ const navItems = [
     link: "/products",
     icon: <Factory className="max-sm:w-4" />,
     submenu: [
-      { name: "Metal Sheet Rings", link: "/products/metal-sheet-rings" },
       { name: "AC Motor Covers", link: "/products/ac-motor-covers" },
       { name: "Fan Blades", link: "/products/fan-blades" },
+      { name: "Motor Components", link: "/products/motor-components" },
+      { name: "Metal Sheet Rings", link: "/products/metal-sheet-rings" },
+      { name: "Pedestral Fans", link: "/products/pedestral-fans" },
     ],
   },
 ];
