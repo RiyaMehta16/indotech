@@ -1,4 +1,11 @@
-import { coolerMotor1, coolerMotor2, coolerStand1 } from "../../assets";
+import {
+  coolerMotor1,
+  coolerMotor2,
+  coolerStand1,
+  //   cover1,
+  //   cover2,
+  //   cover3,
+} from "../../assets";
 
 export const COOLER_ACCESSORIES = [
   {

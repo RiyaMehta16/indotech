@@ -25,7 +25,7 @@ const CatalogueItem = ({ product }) => {
         <img
           src={product.image}
           alt={product.title}
-          className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-100"
+          className="w-full h-80 object-cover scale-90 group-hover:scale-110 transition-transform duration-100"
         />
 
         {/* Gradient Overlay */}

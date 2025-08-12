@@ -49,7 +49,7 @@ import pedestralFan3 from "./pedestralFans/pedestralFan3.jpg";
 import pedestralFan4 from "./pedestralFans/pedestralFan4.jpg";
 import cooler1 from "./coolerFans/cooler1.jpeg";
 import cooler2 from "./coolerFans/cooler2.jpeg";
-import cooler3 from "./coolerFans/cooler3.jpeg";
+import cooler3 from "./coolerFans/cooler3.png";
 // Import your assets
 import metalSheetRings from "../assets/metalSheetRings.png";
 import acMotorCovers from "../assets/acMotorCovers.png";
