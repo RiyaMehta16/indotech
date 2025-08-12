@@ -3,28 +3,27 @@ import HeadingForSections from "../ui/HeadingForSections";
 import { Bolt, ShieldCheck, Globe } from "lucide-react";
 import ManufacturingFeaturesCard from "../ManufacturingFeaturesCard";
 
+const features = [
+  {
+    id: 0,
+    title: "Precision Engineering",
+    text: "State-of-the-art machinery and expert engineers ensuring precise manufacturing.",
+    icon: <Bolt color="#1c3c84" strokeWidth={2} />,
+  },
+  {
+    id: 1,
+    title: "Quality Assurance",
+    text: "Rigorous quality control processes meeting international standards.",
+    icon: <ShieldCheck color="#1c3c84" strokeWidth={2} />,
+  },
+  {
+    id: 2,
+    title: "Global Delivery",
+    text: "Timely delivery of products to clients worldwide with tracking systems.",
+    icon: <Globe color="#1c3c84" strokeWidth={2} />,
+  },
+];
 const ManufacturingSection = () => {
-  const features = [
-    {
-      id: 0,
-      title: "Precision Engineering",
-      text: "State-of-the-art machinery and expert engineers ensuring precise manufacturing.",
-      icon: <Bolt color="#1c3c84" strokeWidth={2} />,
-    },
-    {
-      id: 1,
-      title: "Quality Assurance",
-      text: "Rigorous quality control processes meeting international standards.",
-      icon: <ShieldCheck color="#1c3c84" strokeWidth={2} />,
-    },
-    {
-      id: 2,
-      title: "Global Delivery",
-      text: "Timely delivery of products to clients worldwide with tracking systems.",
-      icon: <Globe color="#1c3c84" strokeWidth={2} />,
-    },
-  ];
-
   return (
     <div id="features" className=" mb-32 max-sm:-translate-y-20 max-sm:mb-16">
       <HeadingForSections

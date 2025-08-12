@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { ProductCard } from "../ui/ProductCard";
+import { ProductCardForParallax } from "../ui/ProductCardForParallax";
 import { Header } from "../ui/Header";
 import React from "react";
 
@@ -82,7 +82,7 @@ export const ProductsParallax = ({ products }) => {
 
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 mb-5 max-sm:space-x-2 max-sm:mb-2">
           {firstRow.map((product) => (
-            <ProductCard
+            <ProductCardForParallax
               product={product}
               translate={translateX}
               key={product.title}
@@ -91,7 +91,7 @@ export const ProductsParallax = ({ products }) => {
         </motion.div>
         <motion.div className="flex flex-row mb-5 space-x-5 max-sm:space-x-2 max-sm:mb-2">
           {secondRow.map((product) => (
-            <ProductCard
+            <ProductCardForParallax
               product={product}
               translate={translateXReverse}
               key={product.title}
@@ -100,7 +100,7 @@ export const ProductsParallax = ({ products }) => {
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 max-sm:space-x-2 max-sm:mb-2">
           {thirdRow.map((product) => (
-            <ProductCard
+            <ProductCardForParallax
               product={product}
               translate={translateX}
               key={product.title}

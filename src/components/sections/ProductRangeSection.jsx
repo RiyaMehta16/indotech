@@ -6,28 +6,27 @@ import acMotorCovers from "../../assets/acMotorCovers.png";
 import fanBlades from "../../assets/fanBlades.png";
 import ScrollReveal from "../ui/ScrollReveal";
 
+const products = [
+  {
+    id: 1,
+    image: metalSheetRings,
+    title: "Metal Sheet Ring",
+    description: "Precision-engineered rings for industrial applications",
+  },
+  {
+    id: 2,
+    image: acMotorCovers,
+    title: "AC Motor Cover",
+    description: "Durable motor covers with perfect finishing",
+  },
+  {
+    id: 3,
+    image: fanBlades,
+    title: "Other Products",
+    description: "High-performance equipment for various applications",
+  },
+];
 const ProductRangeSection = () => {
-  const products = [
-    {
-      id: 1,
-      image: metalSheetRings,
-      title: "Metal Sheet Ring",
-      description: "Precision-engineered rings for industrial applications",
-    },
-    {
-      id: 2,
-      image: acMotorCovers,
-      title: "AC Motor Cover",
-      description: "Durable motor covers with perfect finishing",
-    },
-    {
-      id: 3,
-      image: fanBlades,
-      title: "Other Products",
-      description: "High-performance equipment for various applications",
-    },
-  ];
-
   return (
     <section id="products" className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12">
       <ScrollReveal>

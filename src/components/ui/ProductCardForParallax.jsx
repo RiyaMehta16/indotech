@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const ProductCard = ({ product, translate }) => {
+export const ProductCardForParallax = ({ product, translate }) => {
   return (
     <motion.div
       style={{
