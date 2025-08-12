@@ -7,6 +7,7 @@ import Home from "./pages/HomePage";
 
 import NotFound from "./pages/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage";
+import CategoryPage from "./pages/CategoryPage";
 const navItems = [
   { name: "Home", link: "/#", icon: <House className="max-sm:w-4" /> },
   { name: "Contact", link: "/#contact", icon: <Info className="max-sm:w-4" /> },
@@ -17,6 +18,8 @@ const navItems = [
     submenu: [
       { name: "AC Motor Covers", link: "/products/ac-motor-covers" },
       { name: "Fan Blades", link: "/products/fan-blades" },
+      { name: "Coolers", link: "/products/coolers" },
+      { name: "Cooler Accessories", link: "/products/cooler-accessories" },
       { name: "Motor Components", link: "/products/motor-components" },
       { name: "Metal Sheet Rings", link: "/products/metal-sheet-rings" },
       { name: "Pedestral Fans", link: "/products/pedestral-fans" },
@@ -46,6 +49,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products/:category" element={<CategoryPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

@@ -3,17 +3,18 @@ import ScrollReveal from "../components/ui/ScrollReveal";
 import HeadingForSections from "../components/ui/HeadingForSections";
 
 import CatalogueItem from "../components/ui/CatalogueItem";
-// Example: You could import ALL individual product images from /assets/* folders
-// later if you want a more detailed listing.
+
 import {
-  coolers,
-  coolersAccessories,
-  covers,
-  fanblades,
-  motorComponents,
-  motorRings,
-  pedestralFan,
-} from "../utils";
+  COOLERS,
+  COVERS,
+  FANBLADES,
+  ALL_PRODUCTS,
+  PRODUCT_CATEGORIES,
+  COOLER_ACCESSORIES,
+  MOTOR_COMPONENTS,
+  MOTOR_RINGS,
+  PEDESTAL_FANS,
+} from "../constants";
 const ProductsPage = () => {
   return (
     <div className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12 min-w-80">
@@ -27,10 +28,10 @@ const ProductsPage = () => {
       <ScrollReveal immediate>
         <div className="min-w-80 py-10 px-4 sm:px-6 lg:px-12">
           <h1 className="text-4xl text-center text-blue-950 font-bold my-5">
-            Coolers
+            ALL_PRODUCTS
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {coolers.map((p, index) => (
+            {ALL_PRODUCTS.map((p, index) => (
               <CatalogueItem key={index} product={p} />
             ))}
           </div>
@@ -42,7 +43,7 @@ const ProductsPage = () => {
             Cooler Stands & Motors
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {coolersAccessories.map((p, index) => (
+            {COOLER_ACCESSORIES.map((p, index) => (
               <CatalogueItem key={index} product={p} />
             ))}
           </div>
@@ -54,7 +55,7 @@ const ProductsPage = () => {
             Cooler Motor Covers
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {covers.map((p, index) => (
+            {COVERS.map((p, index) => (
               <CatalogueItem key={index} product={p} />
             ))}
           </div>
@@ -66,7 +67,7 @@ const ProductsPage = () => {
             Cooler Fan Blades
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {fanblades.map((p, index) => (
+            {FANBLADES.map((p, index) => (
               <CatalogueItem key={index} product={p} />
             ))}
           </div>
@@ -78,7 +79,7 @@ const ProductsPage = () => {
             Cooler Motor Components/Parts
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {motorComponents.map((p, index) => (
+            {MOTOR_COMPONENTS.map((p, index) => (
               <CatalogueItem key={index} product={p} />
             ))}
           </div>
@@ -90,7 +91,7 @@ const ProductsPage = () => {
             Cooler Metal Sheet Rings
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {motorRings.map((p, index) => (
+            {MOTOR_RINGS.map((p, index) => (
               <CatalogueItem key={index} product={p} />
             ))}
           </div>
@@ -102,7 +103,7 @@ const ProductsPage = () => {
             Pedestral Fan
           </h1>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {pedestralFan.map((p, index) => (
+            {PEDESTAL_FANS.map((p, index) => (
               <CatalogueItem key={index} product={p} />
             ))}
           </div>
