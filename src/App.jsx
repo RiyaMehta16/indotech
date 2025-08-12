@@ -8,6 +8,7 @@ import Home from "./pages/HomePage";
 import NotFound from "./pages/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage";
 import CategoryPage from "./pages/CategoryPage";
+import ScrollToTop from "./components/ui/ScrollToTop";
 const navItems = [
   { name: "Home", link: "/#", icon: <House className="max-sm:w-4" /> },
   { name: "Contact", link: "/#contact", icon: <Info className="max-sm:w-4" /> },
@@ -43,6 +44,7 @@ const navItems = [
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-w-80">
         <FloatingNav navItems={navItems} />
 
