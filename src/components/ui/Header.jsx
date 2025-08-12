@@ -1,9 +1,10 @@
 "use client";
-
+// /* eslint-disable */
 import { motion } from "framer-motion";
 import TransparentButton from "./TransparentButton";
 import whatsapp from "../../assets/whatsapp.png";
 import { Button } from "./Button";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -41,15 +42,15 @@ export function Header() {
         Talented engineers at work for your precision manufacturing needs
       </motion.p>
       <div className="flex ">
-        <a className="flex justify-center " href="contact">
+        <Link className="flex justify-center " to={"/products"}>
           <TransparentButton
             bgColor="bg-blue-600"
             hoverClass="hover:bg-blue-700"
             className="flex  items-center mr-5"
           >
-            Get Started &rarr;
+            Browse Collection &rarr;
           </TransparentButton>
-        </a>
+        </Link>
         <a
           className="flex justify-center "
           href="https://api.whatsapp.com/send/?phone=%2B918196800108&text&type=phone_number&app_absent=0"

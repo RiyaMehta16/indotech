@@ -47,7 +47,10 @@ import pedestralFan1 from "./pedestralFans/pedestralFan1.jpg";
 import pedestralFan2 from "./pedestralFans/pedestralFan2.jpg";
 import pedestralFan3 from "./pedestralFans/pedestralFan3.jpg";
 import pedestralFan4 from "./pedestralFans/pedestralFan4.jpg";
-
+// Import your assets
+import metalSheetRings from "../assets/metalSheetRings.png";
+import acMotorCovers from "../assets/acMotorCovers.png";
+import fanBlades from "../assets/fanBlades.png";
 export {
   cover1,
   cover2,
@@ -98,4 +101,7 @@ export {
   pedestralFan2,
   pedestralFan3,
   pedestralFan4,
+  metalSheetRings,
+  acMotorCovers,
+  fanBlades,
 };

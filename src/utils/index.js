@@ -27,6 +27,9 @@ import {
   motorComponent4,
   motorComponent5,
   motorComponent6,
+  metalSheetRings,
+  acMotorCovers,
+  fanBlades,
 } from "../assets";
 
 export const products = [
@@ -174,4 +177,49 @@ export const products = [
     link: "https://indotechengineering.in/",
     thumbnail: ring6,
   },
+];
+export const allProductsItems = [
+  {
+    id: 1,
+    image: metalSheetRings,
+    title: "Metal Sheet Ring",
+    description:
+      "Precision-engineered rings for industrial applications with unmatched durability and quality assurance.",
+  },
+  {
+    id: 2,
+    image: acMotorCovers,
+    title: "AC Motor Cover",
+    description:
+      "Durable motor covers with perfect finishing for maximum protection and performance.",
+  },
+  {
+    id: 3,
+    image: fanBlades,
+    title: "Fan Blades",
+    description:
+      "High-performance blades designed for optimal airflow, efficiency, and long-lasting use.",
+  },
+  {
+    id: 4,
+    image: fanBlades,
+    title: "Fan Blades",
+    description:
+      "High-performance blades designed for optimal airflow, efficiency, and long-lasting use.",
+  },
+  {
+    id: 5,
+    image: metalSheetRings,
+    title: "Metal Sheet Ring",
+    description:
+      "Precision-engineered rings for industrial applications with unmatched durability and quality assurance.",
+  },
+  {
+    id: 6,
+    image: acMotorCovers,
+    title: "AC Motor Cover",
+    description:
+      "Durable motor covers with perfect finishing for maximum protection and performance.",
+  },
+  // You can list more categories or detailed single items with unique images from your /assets folders
 ];
