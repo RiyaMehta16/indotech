@@ -63,8 +63,6 @@ const categories = [
   },
 ];
 const ProductsPage = () => {
-  // Category configuration with routing info
-
   return (
     <div className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12 min-w-80">
       <ScrollReveal>

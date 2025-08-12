@@ -28,19 +28,6 @@ const navItems = [
   },
 ];
 
-// const navItems = [
-//   { name: "Home", link: "/#", icon: <House className="max-sm:w-4" /> },
-//   {
-//     name: "Contact",
-//     link: "/#contact",
-//     icon: <Info className="max-sm:w-4" />,
-//   },
-//   {
-//     name: "Our Products >",
-//     link: "/products",
-//     icon: <Factory className="max-sm:w-4" />,
-//   },
-// ];
 function App() {
   return (
     <BrowserRouter>
