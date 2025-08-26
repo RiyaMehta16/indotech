@@ -50,7 +50,7 @@ export const ProductsParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[245vh]  max-lg:h-[220vh] max-lg:py-20 max-md:h-[170vh] max-sm:h-[150vh] max-md:py-5 max-md:translate-y-20 py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[245vh] py-32 max-lg:h-[220vh] max-lg:py-20 max-md:h-[170vh] max-sm:h-[150vh] max-md:py-5 max-md:translate-y-20 py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header className="mt-32" />
       <motion.div
@@ -71,10 +71,10 @@ export const ProductsParallax = ({ products }) => {
       </motion.div>
       <motion.div
         style={{ rotateX, rotateY, rotateZ, translateY, opacity }}
-        className="flex flex-col items-center space-y-5  bg-blue-900 py-20 px-96 max-sm:px-4 max-sm:py-4 max-sm:-translate-y-28"
+        className="flex flex-col items-center space-y-5  bg-blue-900 py-10 px-96 max-sm:px-4 max-sm:py-4 max-sm:-translate-y-28"
       >
         <motion.h2
-          className="text-4xl font-bold text-center text-nowrap text-white max-xl:text-4xl max-xl:mb-16 max-lg:text-2xl max-sm:text-md max-sm:text-wrap  max-sm:whitespace-normal max-sm:mb-4"
+          className="text-4xl font-bold text-center text-nowrap text-white max-xl:text-4xl   max-lg:text-2xl max-sm:text-md max-sm:text-wrap  max-sm:whitespace-normal max-sm:mb-4"
           style={{ opacity }}
         >
           A Diverse Collection to Choose From

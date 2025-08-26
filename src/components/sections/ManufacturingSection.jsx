@@ -25,7 +25,10 @@ const features = [
 ];
 const ManufacturingSection = () => {
   return (
-    <div id="features" className=" mb-32 max-sm:-translate-y-20 max-sm:mb-16">
+    <div
+      id="features"
+      className=" my-32 max-md:my-10 max-sm:-translate-y-6 max-sm:mb-16"
+    >
       <HeadingForSections
         title="Our Manufacturing Excellence"
         text="We are committed to providing the best manufacturing experience to our vendors and partners across the globe with complete quality standards."

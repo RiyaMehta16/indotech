@@ -9,9 +9,11 @@ import NotFound from "./pages/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage";
 import CategoryPage from "./pages/CategoryPage";
 import ScrollToTop from "./components/ui/ScrollToTop";
+import AboutPage from "./pages/AboutPage";
 const navItems = [
   { name: "Home", link: "/#", icon: <House className="max-sm:w-4" /> },
   { name: "Contact", link: "/#contact", icon: <Info className="max-sm:w-4" /> },
+  { name: "About Us", link: "/aboutus", icon: <Info className="max-sm:w-4" /> },
   {
     name: "Our Products",
     link: "/products",
@@ -37,6 +39,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/products/:category" element={<CategoryPage />} />
           <Route path="*" element={<NotFound />} />
