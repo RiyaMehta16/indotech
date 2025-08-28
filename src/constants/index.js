@@ -3,7 +3,7 @@ export * from "./products";
 
 import {
   cover1,
-  fanblade1,
+  clamisterblade1,
   motorComponent1,
   ring1,
   pedestralFan1,
@@ -17,7 +17,7 @@ import {
   ring3,
   pedestralFan3,
   cover4,
-  fanblade4,
+  clamisterblade2,
   ring4,
   pedestralFan4,
   cover5,
@@ -39,9 +39,9 @@ export const products = [
     thumbnail: cover1,
   },
   {
-    title: "fanblade1",
+    title: "clamisterblade1",
     link: "https://indotechengineering.in/",
-    thumbnail: fanblade1,
+    thumbnail: clamisterblade1,
   },
 
   {
@@ -118,9 +118,9 @@ export const products = [
     thumbnail: cover4,
   },
   {
-    title: "fanblade4",
+    title: "clamisterblade2",
     link: "https://indotechengineering.in/",
-    thumbnail: fanblade4,
+    thumbnail: clamisterblade2,
   },
   {
     title: "motorComponent4",

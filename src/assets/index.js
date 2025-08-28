@@ -11,10 +11,10 @@ import cover10 from "./covers/cover10.jpg";
 import cover11 from "./covers/cover11.jpg";
 import cover12 from "./covers/cover12.jpg";
 import cover13 from "./covers/cover13.jpg";
-import fanblade1 from "./fanblades/fanblade1.jpg";
+import clamisterblade1 from "./fanblades/clamisterblade1.jpg";
 import fanblade2 from "./fanblades/fanblade2.jpg";
 import fanblade3 from "./fanblades/fanblade3.jpg";
-import fanblade4 from "./fanblades/fanblade4.jpg";
+import clamisterblade2 from "./fanblades/clamisterblade2.jpg";
 import fanblade5 from "./fanblades/fanblade5.jpg";
 import fanblade6 from "./fanblades/fanblade6.jpg";
 import fanblade7 from "./fanblades/fanblade7.jpg";
@@ -78,10 +78,10 @@ export {
   cover11,
   cover12,
   cover13,
-  fanblade1,
+  clamisterblade1,
+  clamisterblade2,
   fanblade2,
   fanblade3,
-  fanblade4,
   fanblade5,
   fanblade6,
   fanblade7,

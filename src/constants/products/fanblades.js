@@ -1,8 +1,8 @@
 import {
-  fanblade1,
+  clamisterblade1,
   fanblade2,
   fanblade3,
-  fanblade4,
+  clamisterblade2,
   fanblade5,
   fanblade6,
   fanblade7,
@@ -18,8 +18,8 @@ import {
 } from "../../assets";
 export const FANBLADES = [
   {
-    image: fanblade1,
-    title: "fanblade1",
+    image: clamisterblade1,
+    title: "clamisterblade1",
     description: "Short description",
     price: "$450",
     sizes: ['15"', '16"', '17"', '18"'],
@@ -39,8 +39,8 @@ export const FANBLADES = [
     sizes: ['15"', '16"', '17"', '18"'],
   },
   {
-    image: fanblade4,
-    title: "fanblade4",
+    image: clamisterblade2,
+    title: "clamisterblade2",
     description: "Short description",
     price: "$450",
     sizes: ['15"', '16"', '17"', '18"'],
