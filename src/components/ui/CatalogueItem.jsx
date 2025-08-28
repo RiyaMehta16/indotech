@@ -1,17 +1,38 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Heart, ShoppingCart, Eye } from "lucide-react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Heart,
+  ShoppingCart,
+  Eye,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 
-/**
- * product = {
- *   image: "url",
- *   title: "Product Name",
- *   description: "Short description",
- *   price: "$450",
- *   sizes: ["S", "M", "L", "XL"]
- * }
- */
 const CatalogueItem = ({ product }) => {
+  // Use images array if available, fallback to single image
+  const productImages = product.images || [product.image];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const nextImage = (e) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prev) =>
+      prev === productImages.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = (e) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prev) =>
+      prev === 0 ? productImages.length - 1 : prev - 1
+    );
+  };
+
+  const goToImage = (index, e) => {
+    e.stopPropagation();
+    setCurrentImageIndex(index);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -19,17 +40,84 @@ const CatalogueItem = ({ product }) => {
       whileHover={{ y: -2 }}
       transition={{ duration: 0.1 }}
       className="group max-w-sm bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-gray-100 relative transform transition-all duration-100"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Image Container with Overlay */}
-      <div className="relative overflow-hidden">
-        <img
-          src={product.image}
-          alt={product.title}
-          className="w-full h-80 object-cover scale-90 group-hover:scale-110 transition-transform duration-100"
-        />
+      {/* Enhanced Image Container with Carousel */}
+      <div className="relative overflow-hidden h-80">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={currentImageIndex}
+            src={productImages[currentImageIndex]}
+            alt={`${product.title} - Image ${currentImageIndex + 1}`}
+            className="w-full h-80 object-cover scale-90 transition-transform duration-300"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.3 }}
+          />
+        </AnimatePresence>
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-100" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+        {/* Carousel Navigation - Only show if multiple images and hovered */}
+        {productImages.length > 1 && (
+          <>
+            {/* Navigation Arrows */}
+            <AnimatePresence>
+              {isHovered && (
+                <>
+                  <motion.button
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -10 }}
+                    onClick={prevImage}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg transition-all duration-200 hover:scale-110"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                  </motion.button>
+
+                  <motion.button
+                    initial={{ opacity: 0, x: 10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 10 }}
+                    onClick={nextImage}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg transition-all duration-200 hover:scale-110"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <ChevronRight className="w-4 h-4" />
+                  </motion.button>
+                </>
+              )}
+            </AnimatePresence>
+
+            {/* Image Indicators */}
+            <div className="absolute bottom-16 left-1/2 -translate-x-1/2 flex space-x-2">
+              {productImages.map((_, index) => (
+                <motion.button
+                  key={index}
+                  onClick={(e) => goToImage(index, e)}
+                  className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                    index === currentImageIndex
+                      ? "bg-white shadow-lg scale-125"
+                      : "bg-white/60 hover:bg-white/80"
+                  }`}
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                />
+              ))}
+            </div>
+
+            {/* Image Counter */}
+            <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full">
+              {currentImageIndex + 1} / {productImages.length}
+            </div>
+          </>
+        )}
 
         {/* Price Badge */}
         <div className="absolute bottom-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full shadow-lg">
@@ -37,7 +125,7 @@ const CatalogueItem = ({ product }) => {
         </div>
       </div>
 
-      {/* Body with Enhanced Typography */}
+      {/* Body with Enhanced Typography (unchanged) */}
       <div className="p-6 space-y-3">
         <div className="flex items-start justify-between">
           <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-500 transition-colors duration-100">
@@ -68,7 +156,7 @@ const CatalogueItem = ({ product }) => {
         </div>
       </div>
 
-      {/* Enhanced Footer with Animated Bubbles */}
+      {/* Enhanced Footer with Animated Bubbles (unchanged) */}
       <div className="px-6 pb-6">
         <div className="flex flex-wrap gap-2 mb-4">
           {product.sizes && product.sizes.length > 0 ? (
@@ -88,10 +176,8 @@ const CatalogueItem = ({ product }) => {
         </div>
       </div>
 
-      {/* Decorative Elements */}
+      {/* Decorative Elements (unchanged) */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-red-600 to-blue-500"></div>
-
-      {/* Floating Decoration */}
       <div className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-100 animate-bounce"></div>
     </motion.div>
   );

@@ -8,12 +8,12 @@ import {
   ring1,
   pedestralFan1,
   cover2,
-  fanblade2,
+  exhaustblade1a,
   motorComponent2,
   ring2,
   pedestralFan2,
   cover3,
-  fanblade3,
+  sixleafblade1a,
   ring3,
   pedestralFan3,
   cover4,
@@ -21,10 +21,10 @@ import {
   ring4,
   pedestralFan4,
   cover5,
-  fanblade5,
+  exhaustblade1b,
   ring5,
   cover6,
-  fanblade6,
+  exhaustblade2b,
   ring6,
   motorComponent3,
   motorComponent4,
@@ -67,9 +67,9 @@ export const products = [
   },
 
   {
-    title: "fanblade2",
+    title: "exhaustblade1a",
     link: "https://indotechengineering.in/",
-    thumbnail: fanblade2,
+    thumbnail: exhaustblade1a,
   },
   {
     title: "motorComponent2",
@@ -93,9 +93,9 @@ export const products = [
   },
 
   {
-    title: "fanblade3",
+    title: "sixleafblade1a",
     link: "https://indotechengineering.in/",
-    thumbnail: fanblade3,
+    thumbnail: sixleafblade1a,
   },
   {
     title: "motorComponent3",
@@ -143,9 +143,9 @@ export const products = [
     thumbnail: cover5,
   },
   {
-    title: "fanblade5",
+    title: "exhaustblade1b",
     link: "https://indotechengineering.in/",
-    thumbnail: fanblade5,
+    thumbnail: exhaustblade1b,
   },
   {
     title: "motorComponent5",
@@ -163,9 +163,9 @@ export const products = [
     thumbnail: cover6,
   },
   {
-    title: "fanblade6",
+    title: "exhaustblade2b",
     link: "https://indotechengineering.in/",
-    thumbnail: fanblade6,
+    thumbnail: exhaustblade2b,
   },
   {
     title: "motorComponent6",
