@@ -72,7 +72,7 @@ export const FloatingNav = ({ navItems = [], className }) => {
             ))}
 
             <a
-              href="https://api.whatsapp.com/send/?phone=%2B918196800108&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=%2B919023659940&text&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >

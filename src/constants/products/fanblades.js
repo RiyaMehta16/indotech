@@ -27,6 +27,7 @@ export const FANBLADES = [
       clamisterblade3,
       clamisterblade4,
     ],
+    hideRating: true,
     image: clamisterblade1,
     title: "Clamister Blade",
     description:
@@ -38,6 +39,7 @@ export const FANBLADES = [
       airSpeed: "22.3 Km/H",
       airFlow: "1220 Ft³/Min",
       rotation: "CW/CCW",
+      hideRating: true,
     },
     sizes: ['14"', '16"', '18"', '20"', '24"'],
   },
@@ -63,13 +65,25 @@ export const FANBLADES = [
       airSpeed: "21.6 Km/H",
       airFlow: "1180 Ft³/Min",
       rotation: "CW/CCW",
+      hideRating: true,
     },
   },
   {
     images: [farattafanblade1],
     image: farattafanblade1,
     title: "Farrata Fan Blade",
-    description: "Short description",
+    hideRating: true,
+    description:
+      "Premium aerodynamic fan blade engineered for superior air circulation and enhanced cooling performance. Features optimized blade geometry for maximum airflow efficiency in industrial and commercial applications.",
+    specifications: {
+      material: "High-Grade Steel",
+      hubMaterial: "Reinforced Steel",
+      rpm: "Variable Speed",
+      airSpeed: "High Velocity",
+      airFlow: "Maximum Efficiency",
+      rotation: "CW/CCW",
+    },
+    sizes: ["Medium", "Large", "Extra Large"],
   },
 
   {
@@ -77,13 +91,24 @@ export const FANBLADES = [
     images: [exhaustblade1a, exhaustblade1b],
 
     title: "Exhaust Blade Dual Ribbed",
-    description: "Short description",
-
-    sizes: ['15"', '16"', '17"', '18"'],
+    hideRating: true,
+    description:
+      "Corrosion-resistant galvanized steel blades engineered for long-lasting performance in harsh environments. Features 1180 Ft³/Min airflow with customizable mounting options.",
+    sizes: ['9"', '12"', '15"', '18"', '24"'],
+    specifications: {
+      material: "Galvanized Steel",
+      hubMaterial: "Aluminum",
+      rpm: "1400",
+      airSpeed: "21.6 Km/H",
+      airFlow: "1180 Ft³/Min",
+      rotation: "CW/CCW",
+      hideRating: true,
+    },
   },
 
   {
     image: sixleafblade1a,
+    hideRating: true,
     images: [sixleafblade1a, sixleafblade1b],
 
     title: "Six Leaf Blade",
@@ -104,7 +129,20 @@ export const FANBLADES = [
     images: [farattafanblade2],
     image: farattafanblade1,
     title: "Farrata Fan Blade",
-    description: "Short description",
+
+    description:
+      "Advanced lightweight design featuring enhanced blade curvature for improved airflow dynamics. Ideal for high-performance cooling systems requiring precise air distribution and reduced noise operation.",
+
+    sizes: ["Standard", "Large", "Industrial"],
+
+    specifications: {
+      material: "Aluminum Alloy",
+      hubMaterial: "Precision Steel",
+      rpm: "High Speed",
+      airSpeed: "Optimized Flow",
+      airFlow: "Enhanced Circulation",
+      rotation: "Bidirectional",
+    },
   },
 
   {
@@ -121,6 +159,7 @@ export const FANBLADES = [
       airSpeed: "18.1 Km/H",
       airFlow: "1030 Ft³/Min",
       rotation: "CW/CCW",
+      hideRating: true,
     },
     sizes: ['14"', '16"', '18"'],
   },
