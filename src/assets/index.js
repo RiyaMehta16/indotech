@@ -11,22 +11,24 @@ import cover10 from "./covers/cover10.jpg";
 import cover11 from "./covers/cover11.jpg";
 import cover12 from "./covers/cover12.jpg";
 import cover13 from "./covers/cover13.jpg";
-import fanblade1 from "./fanblades/fanblade1.jpg";
-import fanblade2 from "./fanblades/fanblade2.jpg";
-import fanblade3 from "./fanblades/fanblade3.jpg";
-import fanblade4 from "./fanblades/fanblade4.jpg";
-import fanblade5 from "./fanblades/fanblade5.jpg";
-import fanblade6 from "./fanblades/fanblade6.jpg";
-import fanblade7 from "./fanblades/fanblade7.jpg";
-import fanblade8 from "./fanblades/fanblade8.jpg";
-import fanblade9 from "./fanblades/fanblade9.jpg";
-import fanblade10 from "./fanblades/fanblade10.jpg";
-import fanblade11 from "./fanblades/fanblade11.jpg";
-import fanblade12 from "./fanblades/fanblade12.jpg";
-import fanblade13 from "./fanblades/fanblade13.jpg";
-import fanblade14 from "./fanblades/fanblade14.jpg";
-import fanblade15 from "./fanblades/fanblade15.jpg";
-import fanblade16 from "./fanblades/fanblade16.jpg";
+import clamisterblade1 from "./fanblades/clamisterblade1.jpg";
+import exhaustblade1a from "./fanblades/exhaustblade1a.jpg";
+import sixleafblade1a from "./fanblades/sixleafblade1a.jpg";
+import clamisterblade2 from "./fanblades/clamisterblade2.jpg";
+import exhaustblade1b from "./fanblades/exhaustblade1b.jpg";
+import exhaustblade2b from "./fanblades/exhaustblade2b.jpg";
+import sixleafblade1b from "./fanblades/sixleafblade1b.jpg";
+import fiveleafblade1a from "./fanblades/fiveleafblade1a.jpg";
+import exhaustblade2c from "./fanblades/exhaustblade2c.jpg";
+import exhaustblade2a from "./fanblades/exhaustblade2a.jpg";
+import exhaustblade2d from "./fanblades/exhaustblade2d.jpg";
+import exhaustblade2e from "./fanblades/exhaustblade2e.jpg";
+import clamisterblade3 from "./fanblades/clamisterblade3.jpg";
+import clamisterblade4 from "./fanblades/clamisterblade4.jpg";
+import exhaustblade2f from "./fanblades/exhaustblade2f.jpg";
+import fiveleafblade1b from "./fanblades/fiveleafblade1b.jpg";
+import farattafanblade1 from "./fanblades/farattafanblade1.jpg";
+import farattafanblade2 from "./fanblades/farattafanblade2.jpg";
 import motorComponent1 from "./motorComponents/motoComponent1.jpg";
 import motorComponent2 from "./motorComponents/motoComponent2.jpg";
 import motorComponent3 from "./motorComponents/motoComponent3.jpg";
@@ -78,22 +80,24 @@ export {
   cover11,
   cover12,
   cover13,
-  fanblade1,
-  fanblade2,
-  fanblade3,
-  fanblade4,
-  fanblade5,
-  fanblade6,
-  fanblade7,
-  fanblade8,
-  fanblade9,
-  fanblade10,
-  fanblade11,
-  fanblade12,
-  fanblade13,
-  fanblade14,
-  fanblade15,
-  fanblade16,
+  clamisterblade1,
+  clamisterblade2,
+  exhaustblade1a,
+  sixleafblade1a,
+  exhaustblade1b,
+  exhaustblade2b,
+  sixleafblade1b,
+  fiveleafblade1a,
+  exhaustblade2c,
+  exhaustblade2a,
+  exhaustblade2d,
+  exhaustblade2e,
+  clamisterblade3,
+  clamisterblade4,
+  exhaustblade2f,
+  fiveleafblade1b,
+  farattafanblade1,
+  farattafanblade2,
   motorComponent1,
   motorComponent2,
   motorComponent3,

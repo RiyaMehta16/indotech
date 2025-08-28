@@ -43,7 +43,7 @@ export const FloatingNav = ({ navItems = [], className }) => {
               <div className="relative group" key={idx}>
                 <a
                   href={navItem.link}
-                  className="flex items-center space-x-1 text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300"
+                  className="flex items-center space-x-1 font-semibold text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300"
                 >
                   <span className="text-sm">{navItem.name}</span>
                   {navItem.submenu && <ChevronDown size={14} />}
@@ -72,7 +72,7 @@ export const FloatingNav = ({ navItems = [], className }) => {
             ))}
 
             <a
-              href="https://api.whatsapp.com/send/?phone=%2B918196800108&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=%2B919023659940&text&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >

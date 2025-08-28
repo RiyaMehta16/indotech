@@ -1,29 +1,30 @@
 import React from "react";
 import ProductCard from "../ProductRangeCards";
 import HeadingForSections from "../ui/HeadingForSections";
-import metalSheetRings from "../../assets/metalSheetRings.png";
-import acMotorCovers from "../../assets/acMotorCovers.png";
-import fanBlades from "../../assets/fanBlades.png";
+import { farattafanblade2, cover1, cooler3 } from "../../assets";
 import ScrollReveal from "../ui/ScrollReveal";
 
 const products = [
   {
     id: 1,
-    image: metalSheetRings,
-    title: "Metal Sheet Ring",
-    description: "Precision-engineered rings for industrial applications",
+    image: farattafanblade2,
+    title: "Fan Blades",
+    description: "Precision-engineered fan blades for industrial applications",
+    link: "/products/fan-blades",
   },
   {
     id: 2,
-    image: acMotorCovers,
+    image: cover1,
     title: "AC Motor Cover",
     description: "Durable motor covers with perfect finishing",
+    link: "/products/ac-motor-covers",
   },
   {
     id: 3,
-    image: fanBlades,
+    image: cooler3,
     title: "Other Products",
     description: "High-performance equipment for various applications",
+    link: "/products",
   },
 ];
 const ProductRangeSection = () => {

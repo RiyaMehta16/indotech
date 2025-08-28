@@ -6,7 +6,7 @@ const InformationAboutCompany = () => {
     {
       icon: <MapPin className="text-blue-600" />,
       label: "Address",
-      value: "E36 Growth Centre, Mansa Road Bathinda, India",
+      value: "E36, Industrial Growth Centre,  Bathinda, Punjab, India - 151001",
     },
     {
       icon: <Phone className="text-blue-600" />,
@@ -21,7 +21,7 @@ const InformationAboutCompany = () => {
     {
       icon: <MessageSquareText className="text-blue-600" />,
       label: "WhatsApp",
-      value: "+91 8196800108",
+      value: "+91 9023659940",
     },
   ];
 

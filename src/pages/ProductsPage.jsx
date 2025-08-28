@@ -19,16 +19,28 @@ import {
        */
 const categories = [
   {
-    title: "Cooler Stands & Motors",
-    products: COOLER_ACCESSORIES,
-    route: "/products/cooler-accessories",
-    description: "Essential accessories for optimal cooler performance",
+    title: " Fan Blades",
+    products: FANBLADES,
+    route: "/products/fan-blades",
+    description: "High-efficiency blades for maximum airflow",
+  },
+  {
+    title: "Pedestal Fans",
+    products: PEDESTAL_FANS,
+    route: "/products/pedestral-fans",
+    description: "Commercial-grade pedestal fans for every need",
   },
   {
     title: "Cooler Fans",
     products: COOLERS,
     route: "/products/coolers",
     description: "Commercial-grade Cooler fans for every need",
+  },
+  {
+    title: "Cooler Stands & Motors",
+    products: COOLER_ACCESSORIES,
+    route: "/products/cooler-accessories",
+    description: "Essential accessories for optimal cooler performance",
   },
 
   {
@@ -37,12 +49,7 @@ const categories = [
     route: "/products/ac-motor-covers",
     description: "Protective covers for motor durability and safety",
   },
-  {
-    title: "Cooler Fan Blades",
-    products: FANBLADES,
-    route: "/products/fan-blades",
-    description: "High-efficiency blades for maximum airflow",
-  },
+
   {
     title: "Cooler Motor Components/Parts",
     products: MOTOR_COMPONENTS,
@@ -54,12 +61,6 @@ const categories = [
     products: MOTOR_RINGS,
     route: "/products/metal-sheet-rings",
     description: "Durable metal rings for structural integrity",
-  },
-  {
-    title: "Pedestal Fans",
-    products: PEDESTAL_FANS,
-    route: "/products/pedestral-fans",
-    description: "Commercial-grade pedestal fans for every need",
   },
 ];
 const ProductsPage = () => {
