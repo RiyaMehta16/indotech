@@ -27,7 +27,7 @@ const ManufacturingSection = () => {
   return (
     <div
       id="features"
-      className=" mb-32 max-sm:-translate-y-40 max-sm:mb-16 max-sm:mt-10 max-md:mt-5 max-lg:mt-20"
+      className=" mb-32 max-sm:-translate-y-40 max-sm:mb-16 max-sm:-mt-10 max-md:mt-5 max-lg:mt-20 "
     >
       <HeadingForSections
         title="Our Manufacturing Excellence"
