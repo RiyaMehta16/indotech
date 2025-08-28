@@ -7,30 +7,15 @@ import {
 export const PEDESTAL_FANS = [
   {
     image: pedestralFan1,
-    title: "pedestralFan1",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
+    images: [pedestralFan1, pedestralFan2],
+    title: "Pedestral Fan Copper-Gold",
+    description: "Pedestral Fan with copper gold finish",
   },
-  {
-    image: pedestralFan2,
-    title: "pedestralFan2",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
-  {
-    image: pedestralFan3,
-    title: "pedestralFan3",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
+
   {
     image: pedestralFan4,
-    title: "pedestralFan4",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
+    images: [pedestralFan4, pedestralFan3],
+    title: "Pedestral Fan White",
+    description: "Pedestral Fan with white finish",
   },
 ];
