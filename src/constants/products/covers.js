@@ -16,93 +16,52 @@ import {
 export const COVERS = [
   {
     image: cover1,
+    images: [cover1, cover4],
     title: "Cover1",
     description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
   },
   {
     image: cover2,
+    images: [cover2, cover11],
+
     title: "Cover2",
     description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
   },
   {
     image: cover3,
+    images: [cover3, cover6],
+
     title: "Cover3",
     description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
   },
-  {
-    image: cover4,
-    title: "Cover4",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
+
   {
     image: cover5,
     title: "Cover5",
     description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
   },
-  {
-    image: cover6,
-    title: "Cover6",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
+
   {
     image: cover7,
+    images: [cover7, cover8],
+
     title: "Cover7",
     description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
   },
-  {
-    image: cover8,
-    title: "Cover8",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
+
   {
     image: cover9,
+    images: [cover9, cover10],
+
     title: "Cover9",
     description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
   },
-  {
-    image: cover10,
-    title: "Cover10",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
-  {
-    image: cover11,
-    title: "Cover11",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
+
   {
     image: cover12,
+    images: [cover12, cover13],
+
     title: "Cover12",
     description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
-  {
-    image: cover13,
-    title: "Cover13",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
   },
 ];
