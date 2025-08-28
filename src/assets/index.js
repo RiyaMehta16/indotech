@@ -27,6 +27,8 @@ import clamisterblade3 from "./fanblades/clamisterblade3.jpg";
 import clamisterblade4 from "./fanblades/clamisterblade4.jpg";
 import exhaustblade2f from "./fanblades/exhaustblade2f.jpg";
 import fiveleafblade1b from "./fanblades/fiveleafblade1b.jpg";
+import farattafanblade1 from "./fanblades/farattafanblade1.jpg";
+import farattafanblade2 from "./fanblades/farattafanblade2.jpg";
 import motorComponent1 from "./motorComponents/motoComponent1.jpg";
 import motorComponent2 from "./motorComponents/motoComponent2.jpg";
 import motorComponent3 from "./motorComponents/motoComponent3.jpg";
@@ -94,6 +96,8 @@ export {
   clamisterblade4,
   exhaustblade2f,
   fiveleafblade1b,
+  farattafanblade1,
+  farattafanblade2,
   motorComponent1,
   motorComponent2,
   motorComponent3,
