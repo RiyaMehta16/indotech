@@ -6,6 +6,7 @@ import {
   TextSkeleton,
   CardsSkeleton,
 } from "../components/ui/LoadingSkeletons";
+import Footer from "../components/sections/Footer";
 
 // Lazy-loaded sections
 const AboutHero = lazy(() => import("../components/sections/AboutHero"));
@@ -63,6 +64,11 @@ const AboutPage = () => {
         <ErrorBoundary>
           <Suspense fallback={<CardsSkeleton />}>
             <AboutCommitment />
+          </Suspense>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense fallback={<CardsSkeleton />}>
+            <Footer className="-mb-20" />
           </Suspense>
         </ErrorBoundary>
       </div>

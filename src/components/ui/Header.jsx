@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   return (
-    <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center px-4 py-10 md:py-20">
+    <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center px-4 py-10 md:py-20 max-md:mt-60">
       <h1 className="relative z-10 mx-auto max-w-4xl font-bold text-center text-2xl max-lg:font-extrabold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
         {"Better Products, Fine Manufacturing".split(" ").map((word, index) => (
           <motion.span

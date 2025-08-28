@@ -12,13 +12,14 @@ const CategoryPage = () => {
 
   if (!categoryData) {
     return (
-      <div className="min-w-80 py-20 px-4 text-center">
+      <div className="min-w-80 py-20 px-4 text-center mt-20">
         <h1 className="text-2xl font-bold text-gray-800">Category not found</h1>
         <Link
           to="/products"
-          className="text-blue-600 underline mt-4 inline-block"
+          className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium group mt-10"
         >
-          Back to Products
+          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-200" />
+          <span>Back to All Products</span>
         </Link>
       </div>
     );
@@ -55,7 +56,7 @@ const CategoryPage = () => {
       {/* All Products Grid */}
       <ScrollReveal immediate>
         <div className="max-w-7xl mx-auto">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center ">
             {categoryData.products.map((product, index) => (
               <CatalogueItem key={index} product={product} />
             ))}

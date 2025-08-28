@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Link } from "react-router-dom";
 import ScrollReveal from "../components/ui/ScrollReveal";
 import HeadingForSections from "../components/ui/HeadingForSections";
@@ -14,6 +14,9 @@ import {
   PEDESTAL_FANS,
   COOLERS,
 } from "../constants";
+import ErrorBoundary from "../components/ui/ErrorBoundary";
+import { CardsSkeleton } from "../components/ui/LoadingSkeletons";
+import Footer from "../components/sections/Footer";
 /* 
       { name: "Coolers", link: "/products/coolers" },
        */
@@ -65,7 +68,7 @@ const categories = [
 ];
 const ProductsPage = () => {
   return (
-    <div className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12 min-w-80">
+    <div className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12 min-w-80 relative">
       <ScrollReveal>
         <HeadingForSections
           className="mt-16 max-lg:mt-12 max-md:mt-10 max-sm:mt-6"
@@ -113,6 +116,11 @@ const ProductsPage = () => {
           </div>
         </ScrollReveal>
       ))}
+      <ErrorBoundary>
+        <Suspense fallback={<CardsSkeleton />}>
+          <Footer className="-mb-20" />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 };
