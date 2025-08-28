@@ -6,9 +6,10 @@ import { cn } from "../../utils/cn";
 import logo from "../../assets/logos/logo.png";
 import favicon from "../../assets/logos/favicon2.png";
 import { Button } from "./Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const FloatingNav = ({ navItems = [], className }) => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null); // for mobile expand
 
@@ -71,15 +72,9 @@ export const FloatingNav = ({ navItems = [], className }) => {
               </div>
             ))}
 
-            <a
-              href="https://api.whatsapp.com/send/?phone=%2B919023659940&text&type=phone_number&app_absent=0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>
-                <span className="text-sm">Contact Us</span>
-              </Button>
-            </a>
+            <Button onClick={() => navigate("/")}>
+              <a href="#contact">Contact Us</a>
+            </Button>
           </div>
 
           {/* Mobile hamburger */}

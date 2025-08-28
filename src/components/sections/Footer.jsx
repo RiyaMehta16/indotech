@@ -5,9 +5,8 @@ import instagram from "../../assets/instagram.png";
 
 const footerData = {
   Links: [
-    { title: "About", url: "#about" },
-    { title: "Products", url: "#products" },
-    { title: "Features", url: "#features" },
+    { title: "About", url: "/aboutus" },
+    { title: "Products", url: "/products" },
   ],
 };
 
@@ -26,9 +25,11 @@ const socialLinks = [
   },
 ];
 
-const Footer = () => {
+const Footer = ({ className = "" }) => {
   return (
-    <footer className="bg-white text-gray-700 py-12 border-t border-gray-100">
+    <footer
+      className={`bg-white text-gray-700 py-12 border-t border-gray-100 ${className}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between gap-10 items-center md:items-start">
           {/* Navigation Links */}
