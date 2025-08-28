@@ -29,7 +29,10 @@ const products = [
 ];
 const ProductRangeSection = () => {
   return (
-    <section id="products" className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12">
+    <section
+      id="products"
+      className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-12 max-sm:-mt-20"
+    >
       <ScrollReveal>
         <HeadingForSections title="Our Product Range" />
 
