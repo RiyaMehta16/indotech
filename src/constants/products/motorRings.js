@@ -13,6 +13,8 @@ import {
 export const MOTOR_RINGS = [
   {
     image: ring1,
+    images: [ring1, ring9],
+
     title: "ring1",
     description: "Short description",
     price: "$450",
@@ -20,20 +22,18 @@ export const MOTOR_RINGS = [
   },
   {
     image: ring2,
+    images: [ring2, ring3],
+
     title: "ring2",
     description: "Short description",
     price: "$450",
     sizes: ['15"', '16"', '17"', '18"'],
   },
-  {
-    image: ring3,
-    title: "ring3",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
+
   {
     image: ring4,
+    images: [ring4, ring7],
+
     title: "ring4",
     description: "Short description",
     price: "$450",
@@ -41,42 +41,18 @@ export const MOTOR_RINGS = [
   },
   {
     image: ring5,
+    images: [ring5, ring6],
     title: "ring5",
     description: "Short description",
     price: "$450",
     sizes: ['15"', '16"', '17"', '18"'],
   },
-  {
-    image: ring6,
-    title: "ring6",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
-  {
-    image: ring7,
-    title: "ring7",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
+
   {
     image: ring8,
+    images: [ring8, ring10],
+
     title: "ring8",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
-  {
-    image: ring9,
-    title: "ring9",
-    description: "Short description",
-    price: "$450",
-    sizes: ['15"', '16"', '17"', '18"'],
-  },
-  {
-    image: ring10,
-    title: "ring10",
     description: "Short description",
     price: "$450",
     sizes: ['15"', '16"', '17"', '18"'],
