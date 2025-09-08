@@ -1,7 +1,7 @@
 import React from "react";
 import ProductCard from "../ProductRangeCards";
 import HeadingForSections from "../ui/HeadingForSections";
-import { farattafanblade2, cover1, cooler3 } from "../../assets";
+import { farattafanblade2, coolerMotor1, cooler3 } from "../../assets";
 import ScrollReveal from "../ui/ScrollReveal";
 
 const products = [
@@ -14,9 +14,9 @@ const products = [
   },
   {
     id: 2,
-    image: cover1,
-    title: "AC Motor Cover",
-    description: "Durable motor covers with perfect finishing",
+    image: coolerMotor1,
+    title: "Cooler Motors",
+    description: "Durable cooler motors with perfect finishing",
     link: "/products/ac-motor-covers",
   },
   {

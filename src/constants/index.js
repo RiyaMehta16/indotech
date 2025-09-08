@@ -46,13 +46,13 @@ export const products = [
 
   {
     title: "Motor Components",
-    link: " /products/motor-components",
+    link: " /products/cooler-accessories",
     thumbnail: motorComponent1,
   },
 
   {
     title: "Motor Ring",
-    link: " /products/metal-sheet-rings",
+    link: " /products/motor-components",
     thumbnail: ring1,
   },
   {
@@ -73,12 +73,12 @@ export const products = [
   },
   {
     title: "Motor Component",
-    link: "   /products/motor-components",
+    link: "   /products/cooler-accessories",
     thumbnail: motorComponent2,
   },
   {
     title: "Motor Ring",
-    link: " /products/metal-sheet-rings",
+    link: " /products/motor-components",
     thumbnail: ring2,
   },
   {
@@ -99,12 +99,12 @@ export const products = [
   },
   {
     title: "Motor Component",
-    link: " /products/motor-components",
+    link: " /products/cooler-accessories",
     thumbnail: motorComponent3,
   },
   {
     title: "Motor Ring",
-    link: " /products/metal-sheet-rings",
+    link: " /products/motor-components",
     thumbnail: ring3,
   },
   {
@@ -124,12 +124,12 @@ export const products = [
   },
   {
     title: "Motor Component",
-    link: " /products/motor-components",
+    link: " /products/cooler-accessories",
     thumbnail: motorComponent4,
   },
   {
     title: "Motor Ring",
-    link: " /products/metal-sheet-rings",
+    link: " /products/motor-components",
     thumbnail: ring4,
   },
   {
@@ -149,12 +149,12 @@ export const products = [
   },
   {
     title: "Motor Component",
-    link: " /products/motor-components",
+    link: " /products/cooler-accessories",
     thumbnail: motorComponent5,
   },
   {
     title: "Motor Ring",
-    link: " /products/metal-sheet-rings",
+    link: " /products/motor-components",
     thumbnail: ring5,
   },
   {
@@ -169,12 +169,12 @@ export const products = [
   },
   {
     title: "Motor Component",
-    link: " /products/motor-components",
+    link: " /products/cooler-accessories",
     thumbnail: motorComponent6,
   },
   {
     title: "Motor Ring",
-    link: " /products/metal-sheet-rings",
+    link: " /products/motor-components",
     thumbnail: ring6,
   },
 ];

@@ -2,17 +2,15 @@ import { cooler3, cooler2, cooler1 } from "../../assets";
 export const COOLERS = [
   {
     image: cooler1,
-    title: "Cooler White",
-    description: "Short description",
+    title: 'Cooler White to Octain Air Cooler 18"',
+    description: "",
   },
   {
     image: cooler2,
-    title: "Cooler Biege and Brown",
-    description: "Short description",
+    title: 'Cooler Biege and Brown to Tornado cooler 20"',
   },
   {
     image: cooler3,
-    title: "Cooler beige and offwhite",
-    description: "Short description",
+    title: 'cooler biege offwhite to Eva cooler 18.5"',
   },
 ];

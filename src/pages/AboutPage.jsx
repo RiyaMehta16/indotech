@@ -43,6 +43,13 @@ const AboutPage = () => {
         </ErrorBoundary>
 
         <hr className="my-16 border-t-2 border-gray-200" />
+        {/* Commitment Section */}
+        <ErrorBoundary>
+          <Suspense fallback={<CardsSkeleton />}>
+            <AboutCommitment />
+          </Suspense>
+        </ErrorBoundary>
+        <hr className="my-16 border-t-2 border-gray-200" />
 
         {/* Existing OurCompanySection */}
         <ErrorBoundary>
@@ -50,20 +57,11 @@ const AboutPage = () => {
             <OurCompanySection />
           </Suspense>
         </ErrorBoundary>
-
+        <hr className="my-16 border-t-2 border-gray-200" />
         {/* Company Info Section */}
         <ErrorBoundary>
           <Suspense fallback={<TextSkeleton lines={5} />}>
             <AboutCompanyInfo />
-          </Suspense>
-        </ErrorBoundary>
-
-        <hr className="my-16 border-t-2 border-gray-200" />
-
-        {/* Commitment Section */}
-        <ErrorBoundary>
-          <Suspense fallback={<CardsSkeleton />}>
-            <AboutCommitment />
           </Suspense>
         </ErrorBoundary>
         <ErrorBoundary>

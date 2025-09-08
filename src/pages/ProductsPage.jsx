@@ -6,13 +6,12 @@ import CatalogueItem from "../components/ui/CatalogueItem";
 import { ChevronRight, ArrowRight } from "lucide-react";
 
 import {
-  COVERS,
   FANBLADES,
   COOLER_ACCESSORIES,
-  MOTOR_COMPONENTS,
-  MOTOR_RINGS,
   PEDESTAL_FANS,
   COOLERS,
+  STANDS,
+  MOTOR_COMPONENTS,
 } from "../constants";
 import ErrorBoundary from "../components/ui/ErrorBoundary";
 import { CardsSkeleton } from "../components/ui/LoadingSkeletons";
@@ -40,17 +39,17 @@ const categories = [
     description: "Commercial-grade Cooler fans for every need",
   },
   {
-    title: "Cooler Stands & Motors",
+    title: "Cooler Accessories",
     products: COOLER_ACCESSORIES,
     route: "/products/cooler-accessories",
     description: "Essential accessories for optimal cooler performance",
   },
 
   {
-    title: "Cooler Motor Covers",
-    products: COVERS,
-    route: "/products/ac-motor-covers",
-    description: "Protective covers for motor durability and safety",
+    title: "Stands",
+    products: STANDS,
+    route: "/products/stands",
+    description: "Stands for cooler durability and safety",
   },
 
   {
@@ -58,12 +57,6 @@ const categories = [
     products: MOTOR_COMPONENTS,
     route: "/products/motor-components",
     description: "Precision-engineered components for reliable operation",
-  },
-  {
-    title: "Cooler Metal Sheet Rings",
-    products: MOTOR_RINGS,
-    route: "/products/metal-sheet-rings",
-    description: "Durable metal rings for structural integrity",
   },
 ];
 const ProductsPage = () => {

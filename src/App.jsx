@@ -18,13 +18,13 @@ const navItems = [
     link: "/products",
     icon: <Factory className="max-sm:w-4" />,
     submenu: [
-      { name: "AC Motor Covers", link: "/products/ac-motor-covers" },
-      { name: "Fan Blades", link: "/products/fan-blades" },
       { name: "Coolers", link: "/products/coolers" },
       { name: "Cooler Accessories", link: "/products/cooler-accessories" },
+      { name: "Fan Blades", link: "/products/fan-blades" },
+      { name: "Motors", link: "/products/motors" },
       { name: "Motor Components", link: "/products/motor-components" },
-      { name: "Metal Sheet Rings", link: "/products/metal-sheet-rings" },
       { name: "Pedestral Fans", link: "/products/pedestral-fans" },
+      { name: "Stands", link: "/products/stands" },
     ],
   },
 ];

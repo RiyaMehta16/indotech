@@ -2,14 +2,13 @@
 import React from "react";
 import { MotionScrollReveal } from "../../utils/MotionUtils";
 import company from "../../assets/company.png";
+import HeadingForSections from "../ui/HeadingForSections";
 
 const AboutCompanyInfo = () => {
   return (
     <MotionScrollReveal>
       <section className="mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          Our Company
-        </h2>
+        <HeadingForSections title="  Our Company" text="" />
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4 text-lg leading-relaxed max-md:mx-16 max-md:text-center max-sm:mx-12">
             <p>

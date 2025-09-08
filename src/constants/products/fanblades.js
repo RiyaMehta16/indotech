@@ -29,7 +29,7 @@ export const FANBLADES = [
     ],
     hideRating: true,
     image: clamisterblade1,
-    title: "Clamister Blade",
+    title: "Clamtiser Blade",
     description:
       "Precision-engineered aluminum construction delivering 1220 Ft³/Min airflow at 1400 RPM. Perfect for HVAC and industrial cooling with customizable hub configurations and CW/CCW rotation options.",
     specifications: {
@@ -128,7 +128,7 @@ export const FANBLADES = [
   {
     images: [farattafanblade2],
     image: farattafanblade1,
-    title: "Farrata Fan Blade",
+    title: "Farrata Fan Blade (Mango Type)",
 
     description:
       "Advanced lightweight design featuring enhanced blade curvature for improved airflow dynamics. Ideal for high-performance cooling systems requiring precise air distribution and reduced noise operation.",

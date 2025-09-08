@@ -1,19 +1,42 @@
-import { coolerMotor1, coolerMotor2, coolerStand1 } from "../../assets";
+import { coolerStand1 } from "../../assets";
+import {
+  motorComponent1,
+  motorComponent2,
+  motorComponent3,
+  motorComponent4,
+  motorComponent5,
+  motorComponent6,
+} from "../../assets";
 
 export const COOLER_ACCESSORIES = [
   {
-    image: coolerStand1,
-    title: "Cooler stand",
-    description: "Short description",
+    image: motorComponent1,
+    title: "Motor Legs",
+    description: "",
   },
   {
-    image: coolerMotor1,
-    title: "Cooler Motor",
-    description: "Short description",
+    image: motorComponent2,
+    title: "Motor Legs",
+    description: "",
   },
   {
-    image: coolerMotor2,
-    title: "Cooler Motor",
-    description: "Short description",
+    image: motorComponent3,
+    title: "Motor Legs",
+    description: "",
+  },
+  {
+    image: motorComponent4,
+    title: "Motor Legs",
+    description: "",
+  },
+  {
+    image: motorComponent5,
+    title: "Motor Legs",
+    description: "",
+  },
+  {
+    image: motorComponent6,
+    title: "Motor Legs",
+    description: "",
   },
 ];

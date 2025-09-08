@@ -2,14 +2,14 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import { MotionScrollReveal } from "../../utils/MotionUtils";
+import HeadingForSections from "../ui/HeadingForSections";
 
 const AboutCommitment = () => {
   return (
     <MotionScrollReveal>
-      <section>
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Our Commitment to Excellence
-        </h2>
+      <section className="mb-20" id="precision">
+        <HeadingForSections title="  Our Commitment to Excellence" text="" />
+
         <div className="grid md:grid-cols-2 gap-12">
           {/* Precision Engineering */}
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">

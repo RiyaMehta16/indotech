@@ -9,25 +9,28 @@ const features = [
     title: "Precision Engineering",
     text: "State-of-the-art machinery and expert engineers ensuring precise manufacturing.",
     icon: <Bolt color="#1c3c84" strokeWidth={2} />,
+    link: "/aboutus",
   },
   {
     id: 1,
     title: "Quality Assurance",
     text: "Rigorous quality control processes meeting international standards.",
     icon: <ShieldCheck color="#1c3c84" strokeWidth={2} />,
+    link: "/aboutus",
   },
   {
     id: 2,
     title: "Global Delivery",
     text: "Timely delivery of products to clients worldwide with tracking systems.",
     icon: <Globe color="#1c3c84" strokeWidth={2} />,
+    link: "/aboutus",
   },
 ];
 const ManufacturingSection = () => {
   return (
     <div
       id="features"
-      className=" mb-32 max-sm:-translate-y-40 max-sm:mb-16 max-sm:-mt-10 max-md:mt-5 max-lg:mt-20 "
+      className=" mb-32 max-sm:-translate-y-0 max-sm:mb-16  max-md:mt-5 max-lg:mt-20  "
     >
       <HeadingForSections
         title="Our Manufacturing Excellence"

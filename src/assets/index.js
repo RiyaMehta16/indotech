@@ -45,6 +45,7 @@ import ring7 from "./MotorRings/ring7.jpg";
 import ring8 from "./MotorRings/ring8.jpg";
 import ring9 from "./MotorRings/ring9.jpg";
 import ring10 from "./MotorRings/ring10.jpg";
+import ring11 from "./MotorRings/ring11.jpg";
 import pedestralFan1 from "./pedestralFans/pedestralFan1.jpg";
 import pedestralFan2 from "./pedestralFans/pedestralFan2.jpg";
 import pedestralFan3 from "./pedestralFans/pedestralFan3.jpg";
@@ -59,6 +60,28 @@ import fanBlades from "../assets/fanBlades.png";
 import coolerMotor1 from "../assets/coolerMotors/coolerMotor1.jpeg";
 import coolerMotor2 from "../assets/coolerMotors/coolerMotor2.jpeg";
 import coolerStand1 from "../assets/coolerStand/coolerStand1.jpg";
+import coolerStand2 from "../assets/coolerStand/coolerStand2.jpg";
+import coolerStand3 from "../assets/coolerStand/coolerStand3.jpg";
+import coolerStand4 from "../assets/coolerStand/coolerStand4.jpg";
+
+import wms1 from "../assets/wms/wms1.jpg";
+import wms2 from "../assets/wms/wms2.jpg";
+import wms3 from "../assets/wms/wms3.jpg";
+import wms4 from "../assets/wms/wms4.jpg";
+import wms5 from "../assets/wms/wms5.jpg";
+import wms6 from "../assets/wms/wms6.jpg";
+import wms7 from "../assets/wms/wms7.jpg";
+import wms8 from "../assets/wms/wms8.jpg";
+import wms9 from "../assets/wms/wms9.jpg";
+import wms10 from "../assets/wms/wms10.jpg";
+import wms11 from "../assets/wms/wms11.jpg";
+import wms12 from "../assets/wms/wms12.jpg";
+import acs_wallmounted1 from "../assets/acs/acs_wallmounted1.jpg";
+import acs_wallmounted2 from "../assets/acs/acs_wallmounted2.jpg";
+import acs_wallmounted3 from "../assets/acs/acs_wallmounted3.jpg";
+import acs_wallmounted4 from "../assets/acs/acs_wallmounted4.jpg";
+import acs_wallmounted5 from "../assets/acs/acs_wallmounted5.jpg";
+import acs_wallmounted6 from "../assets/acs/acs_wallmounted6.jpg";
 
 export {
   cooler1,
@@ -67,6 +90,27 @@ export {
   coolerMotor1,
   coolerMotor2,
   coolerStand1,
+  coolerStand2,
+  coolerStand3,
+  coolerStand4,
+  wms1,
+  wms2,
+  wms3,
+  wms4,
+  wms5,
+  wms6,
+  wms7,
+  wms8,
+  wms9,
+  wms10,
+  wms11,
+  wms12,
+  acs_wallmounted1,
+  acs_wallmounted2,
+  acs_wallmounted3,
+  acs_wallmounted4,
+  acs_wallmounted5,
+  acs_wallmounted6,
   cover1,
   cover2,
   cover3,
@@ -114,6 +158,7 @@ export {
   ring8,
   ring9,
   ring10,
+  ring11,
   pedestralFan1,
   pedestralFan2,
   pedestralFan3,
