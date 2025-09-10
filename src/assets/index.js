@@ -60,9 +60,9 @@ import fanBlades from "../assets/fanBlades.png";
 import coolerMotor1 from "../assets/coolerMotors/coolerMotor1.jpeg";
 import coolerMotor2 from "../assets/coolerMotors/coolerMotor2.jpeg";
 import coolerStand1 from "../assets/coolerStand/coolerStand1.jpg";
-import coolerStand2 from "../assets/coolerStand/coolerStand2.jpg";
-import coolerStand3 from "../assets/coolerStand/coolerStand3.jpg";
-import coolerStand4 from "../assets/coolerStand/coolerStand4.jpg";
+import coolerStand2 from "../assets/coolerStand/coolerstand2.jpg";
+import coolerStand3 from "../assets/coolerStand/coolerstand3.jpg";
+import coolerStand4 from "../assets/coolerStand/coolerstand4.jpg";
 //changes in names
 import wms1 from "../assets/wms/wms1.jpg";
 import wms2 from "../assets/wms/wms2.jpg";
