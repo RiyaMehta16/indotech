@@ -63,7 +63,7 @@ import coolerStand1 from "../assets/coolerStand/coolerStand1.jpg";
 import coolerStand2 from "../assets/coolerStand/coolerStand2.jpg";
 import coolerStand3 from "../assets/coolerStand/coolerStand3.jpg";
 import coolerStand4 from "../assets/coolerStand/coolerStand4.jpg";
-
+//changes in names
 import wms1 from "../assets/wms/wms1.jpg";
 import wms2 from "../assets/wms/wms2.jpg";
 import wms3 from "../assets/wms/wms3.jpg";
