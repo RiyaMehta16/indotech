@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactUsForm = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ const ContactUsForm = () => {
     message: "",
   });
 
+  const [status, setStatus] = useState({ type: "", msg: "" });
+
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,
@@ -14,12 +17,31 @@ const ContactUsForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // handle your form submission logic here
-    console.log("Form submitted:", formData);
-    // optionally reset the form
-    setFormData({ name: "", email: "", message: "" });
+    setStatus({ type: "loading", msg: "Sending Message..." });
+
+    try {
+      const result = await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // Your Service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Your Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Your Public Key
+      );
+
+      console.log("EmailJS Result:", result.text);
+      setStatus({ type: "success", msg: "Message sent successfully!" });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setStatus({ type: "error", msg: "Failed to send message. Try again." });
+    } finally {
+      setFormData({ name: "", email: "", message: "" });
+      // setStatus({ type: "", msg: "" });
+    }
   };
 
   return (
@@ -89,8 +111,19 @@ const ContactUsForm = () => {
         type="submit"
         className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full font-semibold transition duration-200"
       >
-        Send Message
+        {status.type === "loading" ? status.msg : "Send Message"}
       </button>
+
+      {status.msg && (
+        <p
+          className={`text-sm mt-3 ${
+            status.type === "success" && "text-green-500"
+          } ${status.type === "error" && "text-red-500"}
+          ${status.type === "loading" && "text-orange-500"}`}
+        >
+          {status.msg}
+        </p>
+      )}
     </form>
   );
 };
