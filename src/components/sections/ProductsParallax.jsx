@@ -12,7 +12,7 @@ export const ProductsParallax = ({ products }) => {
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ["start end", "end start"],
   });
 
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
@@ -48,66 +48,70 @@ export const ProductsParallax = ({ products }) => {
   );
 
   return (
-    <div
-      ref={ref}
-      className="h-[280vh] max-xl:h-[260vh] max-lg:h-[240vh] max-lg:-mb-1 max-md:h-[170vh] max-md:mb-16 max-sm:-mb-28 max-sm:h-[180vh]  -mb-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
-    >
-      <Header className="mt-32" />
-      <motion.div
-        className="max-sm:flex hidden flex-col items-center justify-center"
-        initial={{ opacity: 1 }}
-        animate={{ y: [0, 10, 0] }}
-        transition={{
-          repeat: Infinity,
-          duration: 1.5,
-          ease: "easeInOut",
-        }}
-        style={{
-          opacity: useTransform(scrollYProgress, [0, 0.05], [1, 0]),
-        }}
+    <div>
+      <div className="relative z-10">
+        <Header />
+      </div>
+      <div
+        ref={ref}
+        className=" min-h-full mb-60 antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] z-0"
       >
-        <ChevronDown className="text-blue-900 w-6 h-6 mb-2 animate-pulse" />
-        <span className="text-white text-sm">Scroll</span>
-      </motion.div>
-      <motion.div
-        style={{ rotateX, rotateY, rotateZ, translateY, opacity }}
-        className="flex flex-col items-center space-y-5  bg-blue-900 py-10 px-96 max-sm:px-4 max-sm:py-4 max-sm:-translate-y-28"
-      >
-        <motion.h2
-          className="text-4xl font-bold text-center text-nowrap text-white max-xl:text-4xl   max-lg:text-2xl max-sm:text-md max-sm:text-wrap  max-sm:whitespace-normal max-sm:mb-4"
-          style={{ opacity }}
+        <motion.div
+          className="max-sm:flex hidden flex-col items-center justify-center"
+          initial={{ opacity: 1 }}
+          animate={{ y: [0, 10, 0] }}
+          transition={{
+            repeat: Infinity,
+            duration: 1.5,
+            ease: "easeInOut",
+          }}
+          style={{
+            opacity: useTransform(scrollYProgress, [0, 0.05], [1, 0]),
+          }}
         >
-          A Diverse Collection to Choose From
-        </motion.h2>
+          <ChevronDown className="text-blue-900 w-6 h-6 mb-2 animate-pulse" />
+          <span className="text-white text-sm">Scroll</span>
+        </motion.div>
+        <motion.div
+          style={{ rotateX, rotateY, rotateZ, translateY, opacity }}
+          className="flex flex-col items-center space-y-5  bg-blue-900 py-10 px-96 max-sm:px-4 max-sm:py-4 max-sm:-translate-y-28"
+        >
+          <motion.h2
+            className="text-4xl font-bold text-center text-nowrap text-white max-xl:text-4xl   max-lg:text-2xl max-sm:text-md max-sm:text-wrap  max-sm:whitespace-normal max-sm:mb-4"
+            style={{ opacity }}
+          >
+            A Diverse Collection to Choose From
+          </motion.h2>
 
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 mb-5 max-sm:space-x-2 max-sm:mb-2">
-          {firstRow.map((product) => (
-            <ProductCardForParallax
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
+          <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 mb-5 max-sm:space-x-2 max-sm:mb-2">
+            {firstRow.map((product) => (
+              <ProductCardForParallax
+                product={product}
+                translate={translateX}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
+          <motion.div className="flex flex-row mb-5 space-x-5 max-sm:space-x-2 max-sm:mb-2">
+            {secondRow.map((product) => (
+              <ProductCardForParallax
+                product={product}
+                translate={translateXReverse}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
+          <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 max-sm:space-x-2 max-sm:mb-2">
+            {thirdRow.map((product) => (
+              <ProductCardForParallax
+                product={product}
+                translate={translateX}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
         </motion.div>
-        <motion.div className="flex flex-row mb-5 space-x-5 max-sm:space-x-2 max-sm:mb-2">
-          {secondRow.map((product) => (
-            <ProductCardForParallax
-              product={product}
-              translate={translateXReverse}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 max-sm:space-x-2 max-sm:mb-2">
-          {thirdRow.map((product) => (
-            <ProductCardForParallax
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 };
