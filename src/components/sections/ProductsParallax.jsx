@@ -54,7 +54,7 @@ export const ProductsParallax = ({ products }) => {
       </div>
       <div
         ref={ref}
-        className=" min-h-full mb-60 antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] z-0 overflow-x-hidden"
+        className=" min-h-full mb-60 antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] z-0 max-sm:overflow-x-hidden"
       >
         <motion.div
           className="max-sm:flex hidden flex-col items-center justify-center"
